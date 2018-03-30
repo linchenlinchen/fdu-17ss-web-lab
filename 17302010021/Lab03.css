@@ -25,6 +25,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    width: 100%;
+    min-width: 600px;
+
 }
 ol, ul {
     list-style: none;
@@ -46,6 +49,8 @@ table {
 
 body{
   background-color: #E8EAF6;
+    width: 100%;
+    min-width: 800px;
 }
 
 header {
@@ -67,7 +72,6 @@ header p{
   font-style: italic;
   font-family:serif ,sans-serif;
   font-weight: bold;
-  padding-bottom: 1em;
 }
 
 
@@ -78,16 +82,24 @@ nav{
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 0.5em;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
   padding-left: 0.7em;
 }
 nav ul{
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   list-style-type: none;
   display:inline-block;
 }
 nav li{
+  padding-top: 0.14em;
+  padding-bottom: 0.14em;
   float: left;
+  padding-left: 0.20em;
+  padding-right: 0.20em;
+}
+a{
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   padding-left: 0.3em;
   padding-right: 0.3em;
 }
@@ -102,7 +114,6 @@ a:visited{
 a:hover{
   color: white;
   background-color: #F50057;
-  padding: 0.3em;
 }
 
 
@@ -143,7 +154,10 @@ main{
   border-style:solid;
   border-width: 1px ;
   border-color: #C5CAE9;
-  font-weight: bold;
+}
+
+#one div.description a{
+  font-weight: 900;
 }
 
 #one .images{
@@ -152,9 +166,6 @@ main{
   display: inline-block;
   float: right;
 }
-
-
-
 
 #two div{
   margin-bottom: 0.5em;
