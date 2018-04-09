@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <link rel="stylesheet" href="Lab04.css">
+    <link rel="stylesheet" href="Lab4.css">
     <meta charset="utf-8">
     <title></title>
 </head>
@@ -25,11 +25,11 @@
                         <td colspan="2">
                             <p>Title</p>
                             <label>
-                                <input type="text" size="160" value="Give your photo a descriptive name">
+                                <input type="text" name="title" value="Give your photo a descriptive name">
                             </label>
                             <p>Description</p>
                             <label>
-                                <textarea rows="4" cols="162" >Adding a rich description will help with reaserch result
+                                <textarea rows="4" >Adding a rich description will help with reaserch result
                                 </textarea>
                             </label>
                         </td>
@@ -49,13 +49,13 @@
                             <input value="" id="city">
                         </td>
                         <td id="right">
-                            <div class="littleBox">
+                            <div class="box">
                                 <p>Copyright?</p>
                                 <input type="radio" value="All rights reserved">All rights reserved
                                 <br/>
                                 <input type="radio" value="Creative Commons" checked="checked">Creative Commons
                             </div>
-                            <div class="littleBox">
+                            <div class="box">
                                 <p>Creative Commons Types</p>
                                 <input type="checkbox" value="attribution">Attribution
                                 <br/>
@@ -69,7 +69,7 @@
 
                     <tr>
                         <td colspan="2">
-                            <div class="bgpurple">
+                            <div class="rectangle">
                                 I accept the software license
                                 <input type="checkbox">
                             </div>
@@ -86,7 +86,7 @@
                             </div>
                         </td>
                         <td>
-                            <div class="littleBox">
+                            <div class="box">
                                 <p>Date Taken:</p>
                                 <input type="date">
                                 <p>Time Taken:</p>
@@ -97,9 +97,9 @@
 
                     <tr>
                         <td colspan="2">
-                            <div class="bgpurple">
-                                <button type="submit">提交</button>
-                                <button type="reset">Clear Form</button>
+                            <div class="rectangle">
+                                <button type="submit" class="rounded">提交</button>
+                                <button type="reset" class="rounded">Clear Form</button>
                             </div>
                         </td>
                     </tr>
