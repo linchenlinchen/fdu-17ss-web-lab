@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</head>
+<body class="container col-md-9">
+<header>
+    <nav class="collapse navbar-collapse  navbar navbar-expand-md navbar-light row">
+        <div class="col-sm-auto text-center">
+            <h1>Share Your Travels</h1>
+            <p class="font-italic">Let us know where you've been</p>
+        </div>
+        <ul class="collapse navbar-collapse navbar-nav navbar-toggle justify-content-end nav-fill col-md-6 offset-md-1 ">
+            <li class="nav-item">
+                <a class="nav-link" href="Lab05.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Feeling Lucky</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">User</a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+<form>
+    <div class="card">
+        <div class="card-body">
+            <h4>Photos Details</h4>
+            <div class="form-group">
+                <label>Title</label>
+                <input class="col-md-12 border rounded" type="text" placeholder="Give your photo a descriptive name">
+            </div>
+            <div class="form-group ">
+                <label>Description</label>
+                <textarea class="col-md-12 border rounded" placeholder="Adding a rich description will help with search results"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Continent</label>
+                <select class="form-control " >
+                    <option>Choose Continent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Country</label>
+                <select class="form-control" >
+                    <option>Choose Country</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" class="col-md-12 border rounded">
+            </div>
+            <div class="form-group">
+                <label>Copyright?</label><br/>
+                <input type="radio">All rights reserved<br/>
+                <input type="radio" checked>Creative commons
+            </div>
+            <div class="form-group">
+                <label>Creative Common Types</label><br/>
+                <input type="checkbox" class="">Attribution
+                <input type="checkbox" class="">Noncommercial
+                <input type="checkbox" class="">No Derivative Works
+                <br/><br/>
+                <input type="checkbox">Accept the software licence
+            </div>
+            <div class="row">
+                <div class="col-md-3 form-group ">
+                <label>Rate The Photo:</label>
+                <input type="number" class="col-md-12 border rounded">
+                </div>
+                <div class="container col-md-7 form-group justify-content-end">
+                <label>Color Collection:</label>
+                <input type="text" class="col-md-12 border rounded  pull-right">
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-5 form-group">
+                <label>Day Taken:</label>
+                <input type="text" class="col-md-12 border rounded">
+            </div>
+            <div class="container col-md-5 Time Taken">
+                <label>Color Collection:</label>
+                <input type="text" class="col-md-12 border rounded">
+            </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="btn-group">
+            <button type="submit" class="btn btn-secondary btn-item">Submit</button>
+            <button type="submit" class="btn btn-secondary">Clear</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
