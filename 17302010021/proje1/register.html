@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My pj1</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+<header>
+    <h1>Art Store</h1>
+    <p id="slogan">Shopping for love</p>
+    <p id="advice">为确保您账户的安全及正常使用，
+        依《网络安全法》相关要求，
+        6月1日起会员账户需绑定手机。
+        如您还未绑定，请尽快完成，感谢您的理解及支持！</p>
+</header>
+<section>
+    <div>
+        <img src="sucai/images/works/small/063020.jpg" id="imgOne">
+        <img src="sucai/images/works/small/063030.jpg" id="imgTwo">
+        <img src="sucai/images/works/small/063010.jpg" id="imgThree">
+    </div>
+    <form>
+        <span id="register">注册</span><br/><br/><br/>
+            <div>
+            <p class="short">昵称</p>
+            <input type="text" value=""placeholder="昵称" onchange="checkNIcheng()" id="nicheng">
+                <p id="Cnicheng"></p>
+                <br/>
+            </div>
+            <div>
+            <p class="short">密码</p>
+            <input type="password" placeholder="密码" onchange="checkMima()" id="mima">
+                <p id="Cmima"></p>
+                <br/>
+            </div>
+            <div>
+            <p  class="long">确认密码</p>
+            <input type="password" placeholder="确认密码" onchange="checkQue()" id="queren">
+                <p id="Cqueren"></p>
+                <br/>
+            </div>
+            <div>
+            <p class="short">电话</p>
+            <input type="tel" placeholder="电话" onchange="checkDian()"  id="dianhua">
+                <p id="Cdianhua"></p>
+                <br/>
+            </div>
+        <br/>
+        <button type="button" id="zhuce" onclick="canRegister()">注册</button>
+    </form>
+</section>
+<script src="register.js"></script>
+</body>
+</html>

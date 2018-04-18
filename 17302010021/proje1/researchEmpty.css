@@ -1,0 +1,285 @@
+/* This is CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    /* width: 100%;
+    min-width: 600px; */
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+    min-width: 100%;
+    background: url("sucai/180412.jpg");
+}
+
+header{
+    background-color:rgba(50,50,50,0.3);
+    height: 4em;
+}
+header .right{
+    float: right;
+    padding: 0.1em 3em 0.1em 0;
+    margin-top: 1em;
+}
+header #left{
+    float: left;
+    padding: 0.1em 3em 0.1em 0;
+    color: grey;
+    font-family: 楷体;
+}
+header #left span{
+    font-family: Shunpu;
+    font-size: x-large;
+}
+header .right span{
+    float: left;
+    padding: 0.3em;
+}
+header img{
+    height: 15px;
+    width: 15px;
+}
+header a{
+    color: lightgray;
+}
+header a:hover{
+    color: white;
+}
+#form{
+    display: none;
+    background-color: #f1f8fa;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 50%;
+    height: 70%;
+    text-align: left;
+    border: solid wheat 0.2em;
+    padding: 2em 0 0 2em;
+    z-index: 10;
+}
+#form form span{
+    float: left;
+    font-weight: bold;
+    font-size: larger;
+}
+#form form div{
+    float: left;
+}
+#form form div input{
+    float: left;
+}
+#form form p{
+    font-weight: bold;
+}
+#form form input{
+    width: 20em;
+    height: 3em;
+}
+#form form button{
+    border-style: none;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    width: 17em;
+    height: 3em;
+    padding: 0.5em;
+    border:solid orange 0.1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    left: 7%;
+}
+#tipUser,#tipPass{
+    float: right;
+    padding-right: 0.4em;
+    color: red;
+}
+
+#form1{
+    display: none;
+    background-color: blanchedalmond;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 55%;
+    height: 75%;
+    text-align: left;
+    border: solid wheat 0.2em;
+    padding: 1em 0 0 1em;
+    z-index: 10;
+}
+#form1 form span{
+    font-weight: bold;
+    font-size: larger;
+}
+#form1 form div{
+    float: left;
+    display: inline-block;
+    padding-bottom: 0.3em;
+}
+#form1 form div p{
+    float: left;
+}
+.short{
+    padding: 0 2em 0 1em;
+}
+.long{
+    padding: 0 1em 0 0;
+}
+#register{
+    float: left;
+}
+#form1 form div input{
+    float: left;
+    width: 20em;
+    height: 3.6em;
+}
+#form1 form button{
+    border-style: none;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    width: 20em;
+    height: 3em;
+    padding: 0.5em ;
+    margin-left: 2em;
+    margin-top: 2em;
+    border:solid orange 0.1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+#Cnicheng,#Cmima,#Cqueren,#Cdianhua{
+    color: red;
+    float: right;
+    padding-right: 0.2em;
+}
+nav{
+    height: 8em;
+}
+nav #top{
+    height: 6em;
+}
+nav img{
+    height: 1em;
+    width: 1em;
+    float: right;
+    padding: 0.2em ;
+    border: solid grey 0.1em;
+}
+nav input{
+    float: right;
+    height: 1.7em;
+}
+nav div span{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    margin-top: 3em;
+}
+nav h1{
+    float: left;
+    font-family: Shunpu;
+    font-size: 4em;
+    font-weight: bolder;
+    padding: 0.3em;
+}
+nav #bottom{
+    height: 2em;
+    background-color: grey;
+    padding-top: 0.6em;
+}
+
+
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+a{
+    padding: 0.3em 2em 0.3em 2em;
+    text-decoration: none;
+    color: darkslategray;
+}
+
+#researchPage{
+    color: aqua;
+}
+a:hover{
+    color: white;
+}
+a:active{
+    color: aqua;
+}
+main{
+    padding-top: 1em;
+    float: left;
+    width: 100%;
+}
+main #secOne{
+    color: lightgray;
+    font-weight: lighter;
+    font-size: smaller;
+    padding-bottom: 2em;
+}
+main #secOne span{
+    color: black;
+}
+main #secTwo #one{
+    font-size: x-large;
+    padding-left: 1em;
+}
+main #secTwo #two{
+    float: right;
+    padding-right: 2em;
+}
+main #secTwo #two span{
+    float: left
+}
+main #secThree p{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    color: gainsboro;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My pj1</title>
+    <link rel="stylesheet" href="pj1.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="pj1.js"></script>
+    <script src="login.js"></script>
+    <script src="register.js"></script>
+</head>
+<body onload="autoChangePicRight()">
+<!--header-->
+<div class="header" >
+    <img src="sucai/images/works/large/063010.jpg" id="bg">
+    <img src="sucai/images/works/large/063030.jpg" id="bg1">
+    <div id="nav">
+       <span>
+          <h1>Art Store<span>Shopping for love</span></h1>
+       </span>
+       <span>
+          <ul>
+              <li><a href="#" onclick="present2()">注册 </a></li>
+              <li><a href="#" onclick="present1()">登陆</a> </li>
+              <li><a href="detail.html">详情</a> </li>
+              <li><a href="researchEmpty.html">搜索 </a></li>
+              <li><a>首页</a></li>
+          </ul>
+       </span>
+    </div>
+       <span id="learnMore">
+           <p><a href="detail.html">LEARN MORE</a></p>
+       </span>
+    <!--<div><a id="turnLeft" onclick="changePicRight()">◀</a></div>-->
+    <!--<div><a id="turnRight" onclick="changePicRight()">▶</a></div>-->
+</div>
+<div id="form">
+    <form>
+        <span>密码登录</span><br/><br/>
+        <div>
+            <p>用户:</p>
+            <input type="text" value="" placeholder="用户名/账号" id="user">
+            <p id="tipUser"></p>
+        </div>
+        <br/><br/><br/><br/>
+        <div>
+            <p>密码:</p>
+            <input type="password" placeholder="密码" id="pass">
+            <p id="tipPass"></p>
+        </div>
+        <br/>
+        <button type="button" onclick="tipUserEmpty()">登录</button>
+    </form>
+</div>
+
+<div id="form1">
+    <form>
+        <span id="register">注册</span><br/><br/><br/>
+        <div>
+            <p class="short">昵称</p>
+            <input type="text" value=""placeholder="昵称" onchange="checkNIcheng()" id="nicheng">
+            <p id="Cnicheng"></p>
+            <br/>
+        </div>
+        <div>
+            <p class="short">密码</p>
+            <input type="password" placeholder="密码" onchange="checkMima()" id="mima">
+            <p id="Cmima"></p>
+            <br/>
+        </div>
+        <div>
+            <p  class="long">确认密码</p>
+            <input type="password" placeholder="确认密码" onchange="checkQue()" id="queren">
+            <p id="Cqueren"></p>
+            <br/>
+        </div>
+        <div>
+            <p class="short">电话</p>
+            <input type="tel" placeholder="电话" onchange="checkDian()"  id="dianhua">
+            <p id="Cdianhua"></p>
+            <br/>
+        </div>
+        <br/>
+        <button type="button" id="zhuce" onclick="canRegister()">注册</button>
+    </form>
+</div>
+<!--hot area-->
+<div class="recommend">
+<div>
+    <img src="sucai/images/works/small/001020.jpg" alt="Micheal" window.location.href="detail.html" class="workHot">
+     <h4>The Blue Angle God</h4>
+     <p class="author">Author:Micheal Jackson</p>
+     <p>(in the gallery said with <br/>
+         friends) is the golden age<br/>
+         of the Italian Renaissance,<br/>
+         you see this piece of <br/>
+         Raphael's portrait, </p><br/>
+     <p><a href="detail.html" class="viewDetail">View details</a></p>
+</div>
+<div>
+    <img src="sucai/images/works/small/001050.jpg" alt="Micheal" window.location.href="detail.html"  class="workHot">
+     <h4>Yellow Long Hair Man</h4>
+     <p class="author">Author:Maria JK</p>
+     <p>the people in this <br/>
+        painting must be a rich<br/>
+        man, can make such a famous<br/>
+         painter custom portrait.<br/>
+         it's great.</p><br/>
+    <p><a href="detail.html" class="viewDetail">View details</a></p>
+</div>
+<div>
+     <img src="sucai/images/works/small/001060.jpg"  alt="Micheal" window.location.href="detail.html"  class="workHot">
+     <h4>Bending For Struggle</h4>
+     <p class="author">Author:John Herry UY</p>
+     <p>This portrait of <br/>
+         Raphael USES a triangular<br/>
+         composition that gives <br/>
+         the whole picture a sense<br/>
+         of stability.
+     </p>
+    <br/>
+    <p><a href="detail.html" class="viewDetail">View details</a></p>
+</div>
+</div>
+</body>
+</html>

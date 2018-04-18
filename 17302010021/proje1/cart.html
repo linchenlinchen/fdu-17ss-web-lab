@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My pj1</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="jquery-3.3.1.min.js">
+    </script>
+    <script src="cart.js"></script>
+</head>
+<body>
+<header>
+    <div>
+            <span>
+            <img src="sucai/images/icon/login.png">
+            </span>
+        <span>
+            <p><a href="Project1.html">登出</a></p>
+            </span>
+    </div>
+    <div>
+            <span>
+            <img src="sucai/images/icon/cart.png">
+            </span>
+        <span>
+            <p id="cart"><a href="cart.html">购物车</a></p>
+            </span>
+    </div>
+    <div>
+            <span>
+            <img src="sucai/images/icon/user.png">
+            </span>
+        <span>
+            <p><a href="information.html">林晨</a></p>
+            </span>
+    </div>
+</header>
+<nav>
+    <div id="top">
+        <h1>Art Store</h1>
+        <span>
+            <img src="sucai/images/icon/research.png">
+            <input type="text" value="" placeholder="搜索">
+            </span>
+    </div>
+    <div id="bottom">
+        <ul>
+            <li><a href="pj1Login.html">首页</a></li>
+            <li><a href="researchEmptyLogin.html">搜索</a></li>
+            <li><a href="detailLogin.html" id="detail">详情</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div id="divOne">
+        <section id="secOne">
+            <p>您的足迹： 主页-》主页-》个人页面-》<span>购物车页面</span></p>
+        </section>
+        <section id="secTwo">
+            <p>购物车</p>
+        </section>
+        <section id="secThree">
+            <div>
+                <div class="good" id="pic1">
+                    <span><img src="sucai/images/works/small/006010.jpg"></span>
+                    <span>
+                        <div class="hh3">
+                            <h3><a href="detailLogin.html">Still With Bowl And Fruit</a></h3>
+                        </div>
+                        <div>
+                            <p class="namel"><a href="detailLogin.html">Pablo Picasso--This work is attractiv!</a></p>
+                        </div>
+                        <div>
+                            <span class="price">
+                                <p>♥ 价格:$1200.0000</p>
+                            </span>
+                            <span class="delete">
+                                <p>♐删除</p>
+                            </span>
+                        </div>
+                    </span>
+                </div>
+                <div class="good" id="pic2">
+                    <span>
+                   <img src="sucai/images/works/small/015120.jpg">
+                    </span>
+                    <span class="infor">
+                        <div  class="hh3">
+                            <h3><a href="detailLogin.html">Family Of Saltimbanques</a></h3>
+                        </div>
+                        <div>
+                            <p class="namel"><a href="detailLogin.html">Pablo Picasso--An amazing painting</a></p>
+                        </div>
+                        <div>
+                            <span class="price">
+                                <p >♥ 价格:$170.0000</p>
+                            </span>
+                            <span class="delete">
+                                <p>♐删除</p>
+                            </span>
+                        </div>
+                    </span>
+                </div>
+                <div id="account">
+                    <p onclick="jiezhang()">➷结账</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="buttonS">
+        <button type="button">←</button>
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">...</button>
+        <button type="button">→</button>
+    </section>
+</main>
+</body>
+</html>

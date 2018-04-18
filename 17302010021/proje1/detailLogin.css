@@ -1,0 +1,249 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    background-opacity: 0.3;
+}
+
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    min-width: 100%;
+    background: url("sucai/180412.jpg");
+    position: relative;
+}
+header{
+    background-color: rgba(50,50,50,0.3);
+    height: 4em;
+}
+header div{
+    float: right;
+    padding: 0.1em 3em 0.1em 0;
+}
+header div span{
+    float: left;
+    padding: 0.3em;
+    margin-top: 1em;
+}
+header img{
+    height: 1em;
+    width: 1em;
+}
+header a{
+    color: lightgray;
+}
+header a:hover{
+    color: white;
+}
+nav{
+    height: 8em;
+}
+nav #top{
+    height: 6em;
+}
+nav img{
+    height: 1em;
+    width: 1em;
+    float: right;
+    padding: 0.2em ;
+    border: solid grey 0.1em;
+}
+nav input{
+    float: right;
+    height: 1.7em;
+}
+nav div span{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    margin-top: 3em;
+}
+nav h1{
+    float: left;
+    font-family: Shunpu;
+    font-size: 4em;
+    font-weight: bolder;
+    padding: 0.3em;
+}
+nav #bottom{
+    height: 2em;
+    background-color: grey;
+    padding-top: 0.6em;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+nav #detail{
+    color: aqua;
+}
+a{
+    padding: 0.3em 2em 0.3em 2em;
+    text-decoration: none;
+    color: darkslategray;
+}
+a:hover{
+    color: lightpink;
+}
+a:active{
+    color: aqua;
+}
+main #divOne{
+    padding-top: 1em;
+    float: left;
+}
+main #secOne{
+    color: lightgray;
+    font-weight: lighter;
+    font-size: smaller;
+    padding-bottom: 2em;
+}
+main #secOne span{
+    color: black;
+}
+main #secTwo>h2{
+    font-family: ALTRASHED-rough;
+    font-size:2.5em;
+    padding-left: 0.5em;
+}
+main #secTwo>p{
+    font-family: 我字酷不守大蜀木英文字体;
+    font-size: large;
+    padding-left: 1.2em;
+}
+main #secTwo>p a{
+    text-decoration: none;
+}
+main #secTwo>p a:hover{
+    text-decoration: underline;
+    background-color: white;
+    padding-bottom: 0;
+}
+/*main #secTwo #demo{*/
+    /*float: left;*/
+    /*position:relative;*/
+    /*padding-left: 1.3em;*/
+/*}*/
+
+#tol{
+    float: left;
+}
+#demo {
+    display: block;
+    width: 350px;
+    height: 500px;
+    /*float: left;*/
+    padding-left: 1.3em;
+    position: relative;
+}
+#small-box {
+    position: relative;
+    z-index: 1;
+}
+#float-box {
+    display: none;
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    background: #ffffcc;
+    border: 1px solid #ccc;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: move;
+}
+#mark {/*应该是把图片放在这个上面，它的透明度为0，是个block*/
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    filter: alpha(opacity=0);/*过滤器，目前只有少数浏览器支持*/
+    opacity: 0;
+    z-index: 10;
+    cursor: move;
+}
+#big-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 370px;
+    width: 288px;
+    height: 216px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    z-index: 1;;
+}
+
+#big-box img {
+    position: absolute;
+    z-index: 5
+}
+
+
+main #secTwo #two{
+    float: left;
+    margin: 0.5em;
+}
+
+main #secTwo #price{
+    font-family: Arial;
+}
+#price span{
+    color: red;
+    font-family: 我字酷不守大蜀木英文字体;
+    font-size: 1.6em;
+}
+
+main #secTwo button{
+    background-color: cadetblue;
+    border-style: none;
+    height: 3em;
+    width: 12em;
+}
+
+button:active{
+    background-color: darkgreen;
+}
+
+main #secTwo table{
+    border: solid grey 0.2em;
+    border-collapse: collapse;
+    width: 25em;
+}
+
+main #secTwo td{
+    border: solid grey 0.1em;
+    height: 2em;
+}
+
+main #secTwo th{
+    text-align: center;
+    height: 2em;
+}
+main #divTwo{
+    float: right;
+    margin: 1em;
+}
+main #secThree table{
+    border: solid #dff5f3 0.1em;
+    border-collapse: collapse;
+    width: 25em;
+    height: 19em;
+    text-align: center;
+}
+main #secThree th{
+    text-align: center;
+    height: 2em;
+    background-color: #dff5f3;
+}
+main #secThree td{
+    border: dashed #dff5f3 0.1em;
+}

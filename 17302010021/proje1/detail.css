@@ -1,0 +1,364 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    min-width: 100%;
+    background: url("sucai/180412.jpg");
+}
+
+header{
+    background-color: rgba(50,50,50,0.3);
+    height: 4em;
+}
+header .right{
+    float: right;
+    padding: 0.1em 3em 0.1em 0;
+    margin-top: 1em;
+}
+header #left{
+    float: left;
+    padding: 0.1em 3em 0.1em 0;
+    color: grey;
+    font-family: 楷体;
+}
+header #left span{
+    margin-top: 1em;
+    font-family: Shunpu;
+    font-size: x-large;
+}
+header .right span{
+    float: left;
+    padding: 0.3em;
+}
+header img{
+    height: 15px;
+    width: 15px;
+}
+header a{
+    color: lightgray;
+}
+header a:hover{
+    color: white;
+}
+
+#form{
+    display: none;
+    background-color: #f1f8fa;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 50%;
+    height: 70%;
+    text-align: left;
+    border: solid wheat 0.2em;
+    padding: 2em 0 0 2em;
+    z-index: 10;
+}
+#form form span{
+    float: left;
+    font-weight: bold;
+    font-size: larger;
+}
+#form form div{
+    float: left;
+}
+#form form div input{
+    float: left;
+}
+#form form p{
+    font-weight: bold;
+}
+#form form input{
+    width: 20em;
+    height: 3em;
+}
+#form form button{
+    border-style: none;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    width: 17em;
+    height: 3em;
+    padding: 0.5em;
+    border:solid orange 0.1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    left: 7%;
+}
+#tipUser,#tipPass{
+    float: right;
+    padding-right: 0.4em;
+    color: red;
+}
+
+#form1{
+    display: none;
+    background-color: blanchedalmond;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 55%;
+    height: 75%;
+    text-align: left;
+    border: solid wheat 0.2em;
+    padding: 1em 0 0 1em;
+    z-index: 10;
+}
+#form1 form span{
+    font-weight: bold;
+    font-size: larger;
+}
+#form1 form div{
+    float: left;
+    display: inline-block;
+    padding-bottom: 0.3em;
+}
+#form1 form div p{
+    float: left;
+}
+.short{
+    padding: 0 2em 0 1em;
+}
+.long{
+    padding: 0 1em 0 0;
+}
+#register{
+    float: left;
+}
+#form1 form div input{
+    float: left;
+    width: 20em;
+    height: 3.6em;
+}
+#form1 form button{
+    border-style: none;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    width: 20em;
+    height: 3em;
+    padding: 0.5em ;
+    margin-left: 2em;
+    margin-top: 2em;
+    border:solid orange 0.1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+#Cnicheng,#Cmima,#Cqueren,#Cdianhua{
+    color: red;
+    float: right;
+    padding-right: 0.2em;
+}
+nav{
+    height: 8em;
+}
+nav #top{
+    height: 6em;
+}
+nav img{
+    height: 1em;
+    width: 1em;
+    float: right;
+    padding: 0.2em ;
+    border: solid grey 0.1em;
+}
+nav input{
+    float: right;
+    height: 1.7em;
+}
+nav div span{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    margin-top: 3em;
+}
+nav h1{
+    float: left;
+    font-family: Shunpu;
+    font-size: 4em;
+    font-weight: bolder;
+    padding: 0.3em;
+}
+nav #bottom{
+    height: 2em;
+    background-color: grey;
+    padding-top: 0.6em;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+nav #detail{
+    color: aqua;
+}
+a{
+    padding: 0.3em 2em 0.3em 2em;
+    text-decoration: none;
+    color: darkslategray;
+}
+a:hover{
+    color: lightpink;
+}
+a:active{
+    color: aqua;
+}
+main #divOne{
+    padding-top: 1em;
+    float: left;
+}
+main #secOne{
+    color: lightgray;
+    font-weight: lighter;
+    font-size: smaller;
+    padding-bottom: 2em;
+}
+main #secOne span{
+    color: black;
+}
+main #secTwo>h2{
+    font-family: ALTRASHED-rough;
+    font-size:2.5em;
+    padding-left: 0.5em;
+}
+main #secTwo>p{
+    font-family: 我字酷不守大蜀木英文字体;
+    font-size: large;
+    padding-left: 1.2em;
+}
+main #secTwo>p a{
+    text-decoration: none;
+}
+main #secTwo>p a:hover{
+    text-decoration: underline;
+    background-color: white;
+    padding-bottom: 0;
+}
+#tol{
+    float: left;
+}
+#demo {
+    display: block;
+    width: 350px;
+    height: 500px;
+    /*float: left;*/
+    padding-left: 1.3em;
+    position: relative;
+}
+#small-box {
+    position: relative;
+    z-index: 1;
+}
+#float-box {
+    display: none;
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    background: #ffffcc;
+    border: 1px solid #ccc;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: move;
+}
+#mark {/*应该是把图片放在这个上面，它的透明度为0，是个block*/
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    filter: alpha(opacity=0);/*过滤器，目前只有少数浏览器支持*/
+    opacity: 0;
+    z-index: 10;
+    cursor: move;
+}
+#big-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 370px;
+    width: 288px;
+    height: 216px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    z-index: 1;;
+}
+
+#big-box img {
+    position: absolute;
+    z-index: 5
+}
+main #secTwo #two{
+    float: left;
+    margin: 0.5em;
+}
+
+main #secTwo #price{
+    font-family: Arial;
+}
+#price span{
+    color: red;
+    font-family: 我字酷不守大蜀木英文字体;
+    font-size: 1.6em;
+}
+
+main #secTwo button{
+    background-color: cadetblue;
+    border-style: none;
+    height: 3em;
+    width: 12em;
+}
+
+button:active{
+    background-color: darkgreen;
+}
+
+main #secTwo table{
+    border: solid grey 0.2em;
+    border-collapse: collapse;
+    width: 25em;
+}
+
+main #secTwo td{
+    border: solid grey 0.1em;
+    height: 2em;
+}
+
+main #secTwo th{
+    text-align: center;
+    height: 2em;
+}
+main #divTwo{
+    float: right;
+    margin: 1em;
+}
+main #secThree table{
+    border: solid #dff5f3 0.1em;
+    border-collapse: collapse;
+    width: 25em;
+    height: 19em;
+    text-align: center;
+}
+main #secThree th{
+    text-align: center;
+    height: 2em;
+    background-color: #dff5f3;
+}
+main #secThree td{
+    border: dashed #dff5f3 0.1em;
+}

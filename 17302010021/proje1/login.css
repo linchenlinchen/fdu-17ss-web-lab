@@ -1,0 +1,104 @@
+body{
+    background-image: url("sucai/images/works/large/085030.jpg");
+}
+
+header{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+}
+header h1{
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 4em;
+    font-weight: bolder;
+    font-family: Shunpu;
+    color: orange;
+}
+header #slogan{
+    font-style: italic;
+    font-family: ALTRASHED-rough;
+}
+header #advice{
+    padding: 0.3em 1em 0.3em 1em;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    font-weight: lighter;
+    font-size: small;
+    border: solid orange 0.2em;
+}
+section div #imgOne{
+    position: absolute;
+    top: 40%;
+    transform: rotate(30deg);
+}
+section div #imgTwo{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: rotate(-30deg);
+}
+section div #imgThree{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: rotate(30deg);
+}
+form{
+    background-color: #f1f8fa;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 50%;
+    height: 70%;
+    text-align: left;
+    border: solid wheat 0.2em;
+    padding: 2em 0 0 2em;
+}
+form span{
+    font-weight: bold;
+    font-size: larger;
+}
+form div img{
+    float: left;
+}
+form div input{
+    float: left;
+}
+form p{
+    font-weight: bold;
+}
+form img{
+    width:3em;
+    height: 3em;
+}
+form input{
+    width: 20em;
+    height: 3em;
+}
+form button{
+    border-style: none;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    width: 17em;
+    height: 3em;
+    padding: 0.5em;
+    border:solid orange 0.1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    left: 7%;
+}
+#tipUser,#tipPass{
+    float: right;
+    padding-right: 0.4em;
+    color: red;
+}

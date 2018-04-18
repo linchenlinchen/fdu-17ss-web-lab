@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My pj1</title>
+    <link rel="stylesheet" href="information.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="information.js"></script>
+</head>
+<body>
+<header>
+    <div>
+            <span>
+            <img src="sucai/images/icon/login.png">
+            </span>
+        <span>
+            <p><a href="Project1.html">登出</a></p>
+            </span>
+    </div>
+    <div>
+            <span>
+            <img src="sucai/images/icon/cart.png">
+            </span>
+        <span>
+            <p><a href="cart.html">购物车</a></p>
+            </span>
+    </div>
+    <div>
+            <span>
+            <img src="sucai/images/icon/user.png">
+            </span>
+        <span>
+            <p><a href="information.html" id="information">林晨</a></p>
+            </span>
+    </div>
+</header>
+<nav>
+    <div id="top">
+        <h1>Art Store</h1>
+        <span>
+            <img src="sucai/images/icon/research.png">
+            <input type="text" value="搜索">
+            </span>
+    </div>
+    <div id="bottom">
+        <ul>
+            <li><a href="pj1Login.html">首页</a></li>
+            <li><a href="researchPageLogin.html" id="researchPage">搜索</a></li>
+            <li><a href="detailLogin.html" id="detail">详情</a></li>
+            <li><a href="#">发布艺术品</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div id="divOne">
+        <section id="secOne">
+            <p>您的足迹： 主页-》主页-》<span>个人页面</span></p>
+        </section>
+        <section id="secTwo">
+            <div id="largeOne">
+                <p>用户：林晨</p>
+                <p>电话：110</p>
+                <p>邮箱：</p>
+                <p>地址：复旦大学</p>
+                <p>余额：￥3000.0000</p>
+                <p><a  id="money" onclick="chongzhi()">充值信仰</a></p>
+            </div>
+            <form id="chong">
+                <p>输入您充值的金额￥：</p>
+                <input type="number" placeholder="输入充值金额"><br/>
+                <button type="submit" id="sure"><a onclick="sure()">确认</a></button>
+                <button type="button" id="cancel" onclick="chongzhi()"><a>取消</a></button>
+            </form>
+            <div id="largeTwo">
+                <div id="one">
+                    <p>我上传的艺术品：</p><br/>
+                    <table>
+                        <tr>
+                            <td class="namel">商品名称：雨露均沾</td>
+                            <td class="author">作品作者：Alex C</td>
+                            <td class="des">作品描述：这幅画是对宋小宝的真实写照，雨露均沾就是他的代名词。</td>
+                        </tr>
+                        <tr>
+                            <td class="namel">商品名称：搔首弄姿</td>
+                            <td class="author">作品作者：刘佳兴</td>
+                            <td class="des">作品描述：在一个夜黑风高的夜晚，刘同学在204搔首弄姿</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="two">
+                    <p>我购买的艺术品：</p><br/>
+                    <table>
+                        <tr>
+                            <td>订单编号：20180407783</td>
+                            <td>商品名称：Sunflowers</td>
+                            <td>订单时间：2018.04.07</td>
+                            <td>订单金额：￥400</td>
+                        </tr>
+                        <tr>
+                            <td>订单编号：20180407482</td>
+                            <td>商品名称：WAngly</td>
+                            <td>订单时间：2018.04.07</td>
+                            <td>订单金额：￥100</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="three">
+                    <p>我卖出的艺术品：</p><br/>
+                    <table>
+                        <tr>
+                            <td>订单编号：20180412733</td>
+                            <td>商品名称：J.S.Lin的孽缘</td>
+                            <td>订单时间：2018.04.12</td>
+                            <td>订单金额：￥300</td>
+                        </tr>
+                        <tr>
+                            <td>订单编号：20180412442</td>
+                            <td>商品名称：Cindy Sheme's Death</td>
+                            <td>订单时间：2018.04.12</td>
+                            <td>订单金额：￥700</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

@@ -1,0 +1,192 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background: url("sucai/180412.jpg");
+
+}
+header{
+    background-color:rgba(50,50,50,0.3);
+    height: 4em;
+}
+header div{
+    float: right;
+    padding: 0.1em 3em 0.1em 0;
+}
+header div span{
+    float: left;
+    padding: 0.3em;
+    margin-top: 1em;
+}
+header img{
+    height: 15px;
+    width: 15px;
+}
+header a{
+
+    color: lightgray;
+}
+header a:hover{
+    color: white;
+}
+#cart a{
+    color: white;
+}
+nav{
+    height: 8em;
+}
+nav #top{
+    height: 6em;
+}
+nav img{
+    height: 1em;
+    width: 1em;
+    float: right;
+    padding: 0.2em ;
+    border: solid grey 0.1em;
+}
+nav input{
+    float: right;
+    height: 1.7em;
+}
+nav div span{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    margin-top: 3em;
+}
+nav h1{
+    float: left;
+    font-family: Shunpu;
+    font-size: 4em;
+    font-weight: bolder;
+    padding: 0.3em;
+}
+nav #bottom{
+    padding-top: 0.6em;
+    height: 2em;
+    background-color: grey;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+a{
+    text-align: center;
+    padding: 0.3em 2em 0.3em 2em;
+    text-decoration: none;
+    color: darkslategray;
+}
+
+nav #detail{
+    color: aqua;
+}
+
+a:hover{
+    color: lightgray;
+}
+a:active{
+    color: aqua;
+}
+main{
+    width:1270px;
+}
+main #divOne{
+    padding-top: 1em;
+    float: left;
+}
+main #secOne{
+    color: lightgray;
+    font-weight: lighter;
+    font-size: smaller;
+    padding-bottom: 2em;
+}
+main #secOne span{
+    color: black;
+}
+main #secTwo p{
+    font-family: 楷体;
+    font-size: x-large;
+    font-weight: lighter;
+    margin-left: 2em;
+}
+
+section>div{
+    padding: 1.5em;
+}
+.good span{
+    padding: 0.5em;
+    float: left;
+}
+.good>span .infor{
+    float: left;
+}
+.good{
+    padding: 2em;
+    background-color: #ffffde;
+    height: 10em;
+    margin: 2em;
+}
+.good img{
+    width: 10em;
+    height:10em;
+    float: left;
+}
+.good h3{
+    font-family: ALTRASHED-rough;
+    font-size: 2em;
+    padding: 0 1em 0.5em 5em;
+}
+.good .namel{
+    font-family: 我字酷不守大蜀木英文字体;
+    font-size: 2em;
+    padding:  0 1em 0.5em 5em;
+}
+
+.good span span{
+    float: right;
+    padding: 1em 3em 1em 3em;
+    margin: 0 7em;
+    border: solid pink 0.1em;
+    background-color: lightpink;
+}
+.good span .price{
+    background-color: lightblue;
+    border-color: deepskyblue;
+}
+.good .delete:hover{
+    cursor: pointer;
+}
+
+#account{
+    width: 4em;
+    height: 1.5em;
+    float: right;
+    margin-right: 5em;
+    color: black;
+    border:solid darkseagreen 0.1em;
+    background-color: lightgreen;
+    padding: 0.5em;
+}
+#account:hover{
+    cursor: pointer;
+}
+#buttonS{
+    position: absolute;
+    left: 48%;
+    top: 150%;
+}
+button{
+    float: left;
+}
