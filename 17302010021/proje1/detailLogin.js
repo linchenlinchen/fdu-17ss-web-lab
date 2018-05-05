@@ -4,6 +4,18 @@ function addToCart() {
 function addToWish() {
     alert("已成功加入意愿清单！");
 }
+function togg() {
+    $("#form3").toggle();
+}
+function hi() {
+    $("#form3").hide();
+}
+function toggle() {
+    $("#form4").toggle();
+}
+function hide() {
+    $("#form4").hide();
+}
 
 
 //页面加载完毕后执行

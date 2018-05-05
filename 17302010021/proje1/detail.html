@@ -38,7 +38,7 @@
             </span>
     </div>
     <div id="left">
-        <p>欢迎来到 <span>Are Store </span> <a href="#" onclick="present1()">登录</a> 或 <a href="#" onclick="present2()">注册</a></p>
+        <p>欢迎来到 <span>Are Store </span> <a href="#" onclick="present1()">登录</a> 或 <a href="register.html">注册</a></p>
     </div>
 </header>
 
@@ -133,8 +133,8 @@
                 <br/>
                 <p id="price">PRICE: <span> 100.0000</span></p>
                 <br/>
-                <button type="submit" onclick="notWish()">♥ Add to Wish List</button>
-                <button type="submit" onclick="notCart()">♜Add to Shopping Cart</button>
+                <button type="submit" onclick="hi();toggle()">♥ Add to Wish List</button>
+                <button type="submit" onclick="hide();togg()">♜Add to Shopping Cart</button>
                 <br/><br/>
                 <table>
                     <tr>
@@ -253,6 +253,15 @@
         </section>
     </div>
 </main>
+
+<form id="form3">
+    <p>成功加入购物车！</p>
+    <button type="button" onclick="togg()">确认</button>
+</form>
+<form id="form4">
+    <p>成功加入愿望清单！</p>
+    <button type="button" onclick="toggle()">确认</button>
+</form>
 </body>
 <script src="first.js">
 </script>

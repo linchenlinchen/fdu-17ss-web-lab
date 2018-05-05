@@ -62,13 +62,13 @@
                 <p>电话：110</p>
                 <p>邮箱：</p>
                 <p>地址：复旦大学</p>
-                <p>余额：￥3000.0000</p>
+                <p id="fund">余额：￥<span>3000.0000</span></p>
                 <p><a  id="money" onclick="chongzhi()">充值信仰</a></p>
             </div>
             <form id="chong">
                 <p>输入您充值的金额￥：</p>
-                <input type="number" placeholder="输入充值金额"><br/>
-                <button type="submit" id="sure"><a onclick="sure()">确认</a></button>
+                <input type="number" placeholder="输入充值金额" id="recharge"><br/>
+                <button type="submit" id="sure"><a onclick="sure();chongzhi()" href="#">确认</a></button>
                 <button type="button" id="cancel" onclick="chongzhi()"><a>取消</a></button>
             </form>
             <div id="largeTwo">

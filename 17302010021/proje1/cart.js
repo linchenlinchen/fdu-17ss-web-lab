@@ -1,8 +1,9 @@
 var a=new Array();
 b=0;
-function jiezhang() {
-    confirm("您已成功结账！");
+function togg() {
+    $("#form3").toggle();
 }
+
 $(document).ready(function () {
     $(".delete").click(function () {
         $(this).parents(".good").css("display","none");

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="detailLogin.css">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="detailLogin.js"></script>
+    <script src="information.js"></script>
+
 </head>
 <body>
 <header>
@@ -71,13 +73,21 @@
             </div>
         </div>
 
+        <form id="form3">
+            <p>成功加入购物车！</p>
+            <button type="button" onclick="togg()">确认</button>
+        </form>
+        <form id="form4">
+            <p>成功加入愿望清单！</p>
+            <button type="button" onclick="toggle()">确认</button>
+        </form>
         <div id="two">
             <p>This work is amazing but there is no introduction for it</p>
             <br/>
             <p id="price">PRICE: <span> 100.0000</span></p>
             <br/>
-            <button type="submit" onclick="addToWish()">♥ Add to Wish List</button>
-            <button type="submit" onclick="addToCart()">♜Add to Shopping Cart</button>
+            <button type="submit" onclick="hi();toggle()">♥ Add to Wish List</button>
+            <button type="submit" onclick="hide();togg()">♜Add to Shopping Cart</button>
             <br/><br/>
             <table>
                 <tr>
