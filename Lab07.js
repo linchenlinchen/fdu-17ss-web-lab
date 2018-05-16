@@ -62,7 +62,7 @@ function deleteSecond() {
 }
 
 select2.onchange = function() {
-//     alert(select2.value);
+    // alert(select2.value);
     let form2 = document.getElementsByTagName("form")[1];
     if(select2.value === "select" && form2.childNodes.length > 2){
         form2.removeChild(form2.lastChild);
