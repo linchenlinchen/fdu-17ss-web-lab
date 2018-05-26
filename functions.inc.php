@@ -10,52 +10,6 @@ function generateLink($url, $label, $class) {
 
 function outputPostRow($number)  {
     include("travel-data.inc.php");
-//    $resource = 0;
-//    if($number === 1){$resource = "images/8710320515.jpg";}
-//    elseif ($number === 2){$resource = "images/8710289254.jpg";}
-//    else{$resource = "images/8710247776.jpg";}
-    $postId = "postId".$number;
-    $userId = "userId".$number;
-    $userName = "userName".$number;
-    $date = "date".$number;
-    $thumb = "thumb".$number;
-    $title = "title".$number;
-    $excerpt = "excerpt".$number;
-    $reviewsNum = "reviewsNum".$number;
-    $reviewsRating = "reviewsRating".$number;
-    print '<div class="postlist">
-                <div class="row">
-                        <div class="col-md-4">
-                            <a href="post.php?id="'.$$postId . 'class="">'.
-                                '<img src="images/'.$$thumb. '"alt='.$$title.' class="img-responsive"/>
-                            </a>
-                        </div>
-                        <div class="col-md-8">
-                            <h2>'.$$title.'</h2>
-                            <div class="details">Posted by <a href="user.php?id='.$$userId.'" class="">'.$$userName.'</a>
-                                <span class="pull-right">'.$$date.'</span>
-                                <p class="ratings">';
-    if($number === 1) {
-                          print   '<img src="images/star-gold.svg" width="16" /><img src="images/star-gold.svg" width="16" /><img src="images/star-gold.svg" width="16" /><img src="images/star-white.svg" width="16" /><img src="images/star-white.svg" width="16" />';
-        }
-    elseif($number === 2){
-        print                     '<img src="images/star-gold.svg" width="16" /><img src="images/star-gold.svg" width="16" /><img src="images/star-gold.svg" width="16" /><img src="images/star-gold.svg" width="16" /><img src="images/star-gold.svg" width="16" />';
-        }
-        else{
-        print                     '<img src="images/star-gold.svg" width="16" /><img src="images/star-gold.svg" width="16" /><img src="images/star-white.svg" width="16" /><img src="images/star-white.svg" width="16" /><img src="images/star-white.svg" width="16" />';
-        }
-
-
-
-        print $$reviewsNum .' Reviews</p></div><p class="excerpt">
-                            '.$$excerpt.'</p>
-                            <p><a href="post.php?id='.$$userId.'" class="btn btn-primary btn-sm">Read more</a></p>
-                        </div>
-                    </div>
-                    <hr/>
-</div>';
-               //<!-- replace each of these rows with a function call -->
-
 }
 
 /*
