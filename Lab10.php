@@ -100,7 +100,6 @@
                 </div>
               </a>
             </li>
-            <script>document.getElementsByName("country")[0].setAttribute("selected",true)</script>
             ';
                 if(isset($_GET['country'])) {
                     if ($row2['CountryCodeISO'] == $_GET['country']) {
