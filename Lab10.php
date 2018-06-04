@@ -1,6 +1,12 @@
 <?php
 //Fill this place
-
+try{
+    $db = new PDO('mysql:host=localhost;dbname=travel','root',"");
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}catch (PDOException $e){
+    print "Couldn't connect to the database;" . $e->getMessage();
+    exit();
+}
 //****** Hint ******
 //connect database and fetch data here
 
@@ -15,8 +21,8 @@
     <title>Chapter 14</title>
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>-->
-<!--    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     
@@ -43,21 +49,12 @@
                 <option value="0">Select Continent</option>
                 <?php
                 //Fill this place
-                try{
-                    $db = new PDO('mysql:host=localhost;dbname=travel','root',"");
-                    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                }catch (PDOException $e){
-                    print "Couldn't connect to the database;" . $e->getMessage();
-                    exit();
-                }
                 $result = $db->query('SELECT ContinentCode, ContinentName FROM continents');
                 //****** Hint ******
                 //display the list of continents
-
                 while($row = $result->fetch()) {
                   echo '<option value=' . $row['ContinentCode'] . '>' . $row['ContinentName'] . '</option>';
                 }
-
                 ?>
               </select>     
               
@@ -90,7 +87,7 @@
             $img = $db->query('SELECT ImageID,Description,CountryCodeISO,Path FROM imagedetails');
 
             while ($row2=$img->fetch()){
-                $temp = '<a href="detail.php?id=' . $row2['ImageID'] . '" class="img-responsive">
+                $temp = '<li><a href="detail.php?id=' . $row2['ImageID'] . '" class="img-responsive">
                 <img src="images/square-medium/' . $row2['Path'] . '" alt="????">
                 <div class="caption">
                   <div class="blur"></div>
