@@ -62,7 +62,7 @@ try{
                 <option value="0">Select Country</option>
                 <?php 
                 //Fill this place
-                $country = $db->query('SELECT ISO,Continent,CountryName FROM countries');
+                $country = $db->query('SELECT ISO,CountryName FROM countries');
                 while ($row1 = $country->fetch()) {
                     echo '<option value=' . $row1['ISO'] . '>' . $row1['CountryName'] . '</option>';
                 }
@@ -84,9 +84,9 @@ try{
             //Fill this place
 
             //****** Hint ******
-            $img = $db->query('SELECT ImageID,Description,CountryCodeISO,Path FROM imagedetails');
+            $img = $db->query('SELECT ImageID,Description,CountryCodeISO,ContinentCode,Path FROM imagedetails');
 
-            while ($row2=$img->fetch()){
+            while ($row2=$img->fetch()) {
                 $temp = '<li><a href="detail.php?id=' . $row2['ImageID'] . '" class="img-responsive">
                 <img src="images/square-medium/' . $row2['Path'] . '" alt="????">
                 <div class="caption">
@@ -98,12 +98,15 @@ try{
               </a>
             </li>
             ';
-                if(isset($_GET['country'])) {
-                    if ($row2['CountryCodeISO'] == $_GET['country']) {
+                if (isset($_GET['country']) && isset($_GET['continent'])) {
+                    if ($_GET['country'] != "0" && $row2['CountryCodeISO'] == $_GET['country']) {
                         echo $temp;
                     }
+                    elseif ($row2['ContinentCode'] == $_GET['continent']) {
+                            echo $temp;
+                    }
                 }
-                else{
+                else {
                     echo $temp;
                 }
             }
@@ -122,9 +125,7 @@ try{
             </li>        
             */ 
             ?>
-       </ul>       
-
-      
+       </ul>
     </main>
     
     <footer>
