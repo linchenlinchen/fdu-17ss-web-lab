@@ -20,7 +20,7 @@ window.onload = function () {
         data:{"artworkID":document.getElementById("small").name,"userID":document.getElementById("head").name},
         type:"get",
         success(msg){
-            alert(msg);
+            // alert(msg);
             if(msg == "add"){
                 changeButtonWords("已加入购物车");
             }

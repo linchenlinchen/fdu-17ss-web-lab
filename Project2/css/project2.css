@@ -100,6 +100,7 @@ a:hover{
 
 .recommend div{
 	padding:1em 5.55em 3em 5.5em ;
+	height: 700px;
 	float: left;
 	text-align: center;
 	background-color:#e6d59d;
@@ -117,6 +118,9 @@ a:hover{
 .recommend div img:hover{
 	border-color: lightblue;
 
+}
+.recommend h4{
+	width: 244px;
 }
 .recommend .contents{
 	padding: 0;

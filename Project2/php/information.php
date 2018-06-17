@@ -131,6 +131,7 @@ while($row = $result->fetch()){
                                         <td class='namel'><a href='detail.php?href=../resources/img/$fileName'>$title</a></td>
                                         <td class='date'>$date</td>
                                         <td class='des'>$des</td>
+                                        <td><a class='decorate' href='upload.php?fileName=$fileName'>修改</a><a class='del' onclick='deleteArt(this)'>删除</a></td>
                                 </tr>";
                         }
                         ?>
@@ -148,7 +149,7 @@ while($row = $result->fetch()){
                         <?php
                         $work = $db->query("SELECT * FROM orders WHERE ownerID=$userID");
                         while ($row = $work->fetch()){
-                            $num = 1;
+                            for ($num = 1;!isset($title_array) || (isset($title_array) &&$num<count($title_array));$num++){
                             $orderID = $row['orderID'];
                             $sum = $row['sum'];
                             $time = $row['timeCreated'];
@@ -165,7 +166,7 @@ while($row = $result->fetch()){
                                     <td>$time</td>
                                     <td>$sum</td>
                                    </tr>";
-                            $num++;
+                            }
                         }
                         ?>
 <!--                        <tr>-->

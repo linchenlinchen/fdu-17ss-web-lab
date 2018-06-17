@@ -207,7 +207,10 @@ main{
     color: #ee923b;
 }
 .des{
-    width: 24em;
+    width: 20em;
+}
+.decorate,.del{
+    padding: 0;
 }
 #chong{
     display:none;

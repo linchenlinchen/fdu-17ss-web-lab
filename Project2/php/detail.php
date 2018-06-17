@@ -256,7 +256,5 @@ while ($row = $user->fetch()){
 </main>
 </body>
 <script src="../js/project2.js"></script>
-<!--<script src="../js/login.js"></script>-->
-<!--<script src="../js/register.js"></script>-->
 <script src="../js/detail.js"></script>
 </html>

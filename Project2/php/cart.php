@@ -128,7 +128,7 @@ while ($row=$user->fetch()){
                     <span><img src=\"../resources/img/$src\" name='$artworkID'></span>
                     <span id='inform'>
                         <div class=\"hh3\">
-                            <h3><a href=\"detail.php?href='../resources/img/$src'\">$title</a></h3>
+                            <h3><a href=\"detail.php?href=../resources/img/$src\">$title</a></h3>
                         </div>
                         <div>
                             <p class=\"namel\"><a href=\"detail.php?href=../resources/img/$src\">$artist--$description</a></p>

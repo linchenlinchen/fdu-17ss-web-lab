@@ -1,4 +1,36 @@
-
+// noinspection JSAnnotator
+document.onclick = function () {
+    if(document.getElementById("image").src.length>46){
+        //去除前面的一串什么“http：//什么的”
+        let src = document.getElementById("image").src.slice(46);
+        $.ajax({
+            url:"forJudge.php",
+            data:{"src":src},
+            type:"get",
+            success(msg){
+                if(msg.length > 1) {
+                    let words = msg.split("&");
+                    let title = words[0];
+                    let artist = words[1];
+                    let description = words[2];
+                    let year = words[3];
+                    let genre = words[4];
+                    let width = words[5];
+                    let height = words[6];
+                    let price = words[7];
+                    $("#title").val(title);
+                    $("#artist").val(artist);
+                    $("#description").html(description);
+                    $("#year").val(year);
+                    $("#genre").val(genre);
+                    $("#width").val(width);
+                    $("#height").val(height);
+                    $("#price").val(price);
+                }
+            }
+        })
+    }
+};
 function selectFile() {
     //获取选择的图片的文件名
     let src = $("#img").val();

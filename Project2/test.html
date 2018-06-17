@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var divTestJQ = $("#divTest"); //取得容器对象
+            var divJQ = $(">div.test", divTestJQ); //取容器需要重排的对象
+            var EntityList = []; //定义一个数组用于存放要排序的对象
+            divJQ.each(function () {
+                var thisJQ = $(this);
+                EntityList.push({ Name: parseInt(thisJQ.attr("name"), 10), JQ: thisJQ }); //把要排序的对象和排序的值一起放到一个新的对象里，并存入到数组
+            });
+            EntityList.sort(function (a, b) { //利用数组的排序方法重新排序对象
+                return b.Name - a.Name; //从大到小
+                //return a.Name - b.Name; //从小到大
+            });
+            for (var i = 0; i < EntityList.length; i++) {
+                EntityList[i].JQ.appendTo(divTestJQ); //把排序完的对象重新插入到容器对象
+            };
+        });
+    </script>
+</head>
+<body>
+<div id="divTest">
+    <div class="test" name='1'>
+        <div class="test">
+            a</div>
+        //嵌套的div没有name属性
+    </div>
+    <div class="test" name='2'>
+        b</div>
+    <div class="test" name='3'>
+        c</div>
+    <div class="test" name='5'>
+        d</div>
+    <div class="test" name='7'>
+        e</div>
+    <div class="test" name='4'>
+        f</div>
+    <div class="test" name='8'>
+        g</div>
+</div>
+</body>
+</html>

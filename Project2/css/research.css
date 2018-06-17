@@ -250,6 +250,9 @@ main #secThree div div a{
 main #secThree div div a:hover{
     color: white;
 }
+main #secThree .artist{
+    height: 50px;
+}
 main #secThree page button{
     position: relative;
     left: 44%;

@@ -27,6 +27,7 @@ $user = $db->query("SELECT userID FROM users WHERE name='$userName'");
 while ($row = $user->fetch()){
     $userID = $row['userID'];
 }
+
 ?>
 <head>
     <meta charset="UTF-8">
@@ -100,7 +101,7 @@ while ($row = $user->fetch()){
             ?>
         </section>
         <!--<ul id="choose"><li><input type="radio"name="choose" id="up" checked  onclick="tog()">上传艺术品</li><li><input type="radio" name="choose" id="change" onclick="tog()">修改艺术品信息</li></ul>-->
-        <form id="upload" method="post" action="forUpdateOrUpload.php">
+        <form id="upload" method="post" action="forUpdateOrUpload.php" enctype="multipart/form-data">
             <fieldset>
                 <ul>
                     <li>艺术品名称：<input type="text" name="title" autofocus maxlength="50" placeholder="艺术品名称" id="title" onchange="cEmpty('title')"><span id="cTitle"></span></li>
@@ -110,7 +111,15 @@ while ($row = $user->fetch()){
                     <li>艺术品流派：<input type="text" name="genre" maxlength="30" placeholder="艺术品流派" id="genre" onchange="cEmpty('genre')"><span id="cGenre"></span></li>
                     <li>艺术品尺寸：<input type="number" id="width" name="width" placeholder="宽度" onchange="cEmpty('width');cPositive('width')"><input type="number"id="height" name="height" placeholder="高度" onchange="cEmpty('height');cPositive('height')"><span id="cSize"></span></li>
                     <li>艺术品价格：<input type="number"  name="price" placeholder="艺术品价格" id="price" onchange="cEmpty('price');cInt('price');cPositive('price')"><span id="cPrice"></span></li>
-                    <li>艺术品图片：<input type="file"  name="img" id="img" onchange="selectFile()"></li><img id="image" onclick="showImage()" class="min">
+                    <li>艺术品图片：<input type="file" name="file" id="img" onchange="selectFile()"></li><img id="image" <?php
+                    if(isset($_GET['fileName'])){
+                        $fileName=$_GET['fileName'];
+                        $art1 = $db->query("SELECT sell FROM artworks WHERE imageFileName='$fileName' AND sell=0");
+                        while ($row2 =$art1->fetch()){
+                            echo "src='../resources/img/$fileName'";
+
+                        }
+                        }?> onclick="showImage()" class="min">
                     <li><button id="start_upload" name="submit" type="submit">确认上传</button></li>
                 </ul>
             </fieldset>

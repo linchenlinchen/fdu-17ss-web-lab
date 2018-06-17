@@ -144,8 +144,8 @@ catch(PDOException $e){
     </section>
     <section id="secTwo">
         <p id="one">搜索结果：</p>
-        <form method="get" ><p id="two"><span>排序方式：</span><span>价格</span><span><input type="radio"></span>
-            <span>热度</span><span><input type="radio"></span></p></form>
+        <form method="get" ><p id="two"><span>排序方式：</span><span>价格</span><span><input type="radio" id="prices" name="sort" value="1"></span>
+            <span>热度</span><span><input type="radio" id="views" name="sort" value="2" checked></span></p></form>
     </section>
     <section id="secThree">
 
@@ -162,12 +162,14 @@ catch(PDOException $e){
             while ($row1=$good->fetch()){
                 $href = "../resources/img/".$row1['imageFileName'];
                 $titleLen = strlen($row1['title'])>25 ? 25: $row1['title'];
-                $goodBlock = "<div class='block'>
+                $view = $row1['view'];
+                $prices = $row1['price'];
+                $goodBlock = "<div class='block'  name='$view'>
                                 <div class=\"divOne\">
                                     <span><img src=\"$href\"></span>
                                     <span>
                                             <h3>" . ($titleLen == 25 ? (substr($row1['title'], 0, 25) . "...") : $row1['title']) . "</h3><br/>
-                                            <p>" . $row1['artist'] . "<br/>￥" . $row1['price'] . "</p>
+                                            <p class='artist' name='$prices'>" . $row1['artist'] . "<br/>￥" . $row1['price'] . "</p>
                                     </span>
                                 </div>
                                 <div class=\"divTwo\">
@@ -198,16 +200,22 @@ catch(PDOException $e){
             while ($row1=$good->fetch()){
                 $href = "../resources/img/".$row1['imageFileName'];
                 $titleLen = strlen($row1['title'])>25 ? 25: $row1['title'];
-                $goodBlock = "<div>
+                $view = $row1['view'];
+                $prices = $row1['price'];
+                $goodBlock = "<div class='block'  name='$view'>
                                 <div class=\"divOne\">
                                     <span><img src=\"$href\"></span>
                                     <span>
                                             <h3>" . ($titleLen == 25 ? (substr($row1['title'], 0, 25) . "...") : $row1['title']) . "</h3><br/>
-                                            <p>" . $row1['artist'] . "<br/>￥" . $row1['price'] . "</p>
+                                            <p class='artist' name='$prices'>" . $row1['artist'] . "<br/>￥" . $row1['price'] . "</p>
                                     </span>
                                 </div>
                                 <div class=\"divTwo\">
-                                    <p>" . substr($row1['description'], 0, strlen($row1['description']) > 300 ? 300 : strlen($row1['description'])) . "..." . ">热度\"" . $row1['view'] . "</a></p>
+                                    <p>" . substr($row1['description'], 0, strlen($row1['description']) > 300 ? 300 : strlen($row1['description'])) . "..." . "</p>
+                                </div>
+                                <div class='divAdd'>
+                                  <p class='checkP'><a href='detail.php?href=$href' class='check'>查看</a></p>
+                                 <p class='hotP'><a href='#' class='hot'>热度".$row1['view']."</a></p>
                                 </div>
                             </div>";
                 if($row1['artist']==$researchInform || $row1['title']==$researchInform || strpos($row1['description'],$researchInform)> 0 ){

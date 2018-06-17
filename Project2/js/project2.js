@@ -75,7 +75,6 @@ function addOrNot() {
         data:{"artworkID":document.getElementById("small").name,"userID":document.getElementById("head").name},
         type:"get",
         success(msg){
-            alert(msg);
             if(msg == "add"){
                 changeButtonWords("已加入购物车");
                 show("客官，这个宝贝已经在您的购物车咯<br/>（づ￣3￣）づ╭❤～");

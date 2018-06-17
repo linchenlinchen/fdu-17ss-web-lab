@@ -51,8 +51,6 @@ if(isset($_GET['userID']) && isset($_GET['account'])) {
             $t = "artworkID" . "$i";
             if ($row["$t"] != 0) {
                 $artworkID = $row["$t"];
-//                $time1 = new DateTime("1000-01-01 00:00:00");
-//                $timeStr1 = $time1->format("c");
                 $db->exec("UPDATE artworks SET sell=1 WHERE artworkID=$artworkID");
                 $db->exec("UPDATE artworks SET changeOrNot=1 WHERE artworkID=$artworkID");
                 //有问题。。。。。。。。。。。。。。。。。。。。。。。。。。

@@ -11,47 +11,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="information.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/information.php">
+      <file leaf-file-name="research.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/research.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="232" column="41" lean-forward="true" selection-start-line="231" selection-end-line="232" selection-end-column="41" />
+            <state relative-caret-position="194">
+              <caret line="147" column="84" selection-start-line="147" selection-start-column="84" selection-end-line="147" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="information.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/information.js">
+      <file leaf-file-name="test1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="532">
+              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/project2.js">
+      <file leaf-file-name="research.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/research.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="253" column="16" selection-start-line="253" selection-start-column="16" selection-end-line="253" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="research.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/research.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forSearch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/forSearch.php">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Project2/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="48" column="2" lean-forward="true" selection-end-line="48" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forAccount.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/forAccount.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="70" column="84" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="84" />
+            <state relative-caret-position="95">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -59,26 +59,17 @@
       <file leaf-file-name="cart.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/cart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2546">
-              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+            <state relative-caret-position="361">
+              <caret line="130" column="79" lean-forward="true" selection-start-line="130" selection-start-column="79" selection-end-line="130" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/cart.js">
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/project2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="142" column="14" lean-forward="true" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
+              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -86,17 +77,31 @@
       <file leaf-file-name="project2.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/project2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="133" column="14" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+            <state relative-caret-position="161">
+              <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="information.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/information.css">
+      <file leaf-file-name="project2.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/project2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="246" column="16" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="16" />
+            <state relative-caret-position="250">
+              <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/detail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="257" column="41" selection-start-line="257" selection-start-column="41" selection-end-line="257" selection-end-column="41" />
+              <folding>
+                <element signature="e#4300#4306#0#HTML" expanded="true" />
+                <element signature="e#4306#4312#0#HTML" expanded="true" />
+                <element signature="e#4312#4318#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,7 +122,6 @@
       <find>GET</find>
       <find>sucai</find>
       <find>temp/</find>
-      <find>alert</find>
       <find>document.getElementById(&quot;tipUser&quot;)</find>
       <find>》</find>
       <find>logo</find>
@@ -138,6 +142,9 @@
       <find>p</find>
       <find>\&quot;</find>
       <find>author</find>
+      <find>FILES</find>
+      <find>../temp/upload.html</find>
+      <find>alert</find>
     </findStrings>
     <replaceStrings>
       <replace>POST</replace>
@@ -153,15 +160,12 @@
       <replace>span</replace>
       <replace>'</replace>
       <replace>date</replace>
+      <replace>upload.php</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/showWorks.php" />
-        <option value="$PROJECT_DIR$/../web/Lecture/lecture05_PHP/lecture05_PHP/lec05_sample27_Page.php" />
-        <option value="$PROJECT_DIR$/researchPage.css" />
-        <option value="$PROJECT_DIR$/research.js" />
         <option value="$PROJECT_DIR$/researchPage.html" />
         <option value="$PROJECT_DIR$/research.php" />
         <option value="$PROJECT_DIR$/submitRegisterOrNot.php" />
@@ -184,31 +188,35 @@
         <option value="$PROJECT_DIR$/php/login.php" />
         <option value="$PROJECT_DIR$/js/register.js" />
         <option value="$PROJECT_DIR$/css/detail.css" />
-        <option value="$PROJECT_DIR$/css/research.css" />
         <option value="$PROJECT_DIR$/css/cart.css" />
         <option value="$PROJECT_DIR$/php/forDelete.php" />
-        <option value="$PROJECT_DIR$/js/project2.js" />
-        <option value="$PROJECT_DIR$/php/research.php" />
-        <option value="$PROJECT_DIR$/php/cart.php" />
         <option value="$PROJECT_DIR$/php/forAddBalance.php" />
-        <option value="$PROJECT_DIR$/js/information.js" />
         <option value="$PROJECT_DIR$/php/forJudge.php" />
         <option value="$PROJECT_DIR$/php/register.php" />
         <option value="$PROJECT_DIR$/css/upload.css" />
-        <option value="$PROJECT_DIR$/js/upload.js" />
         <option value="$PROJECT_DIR$/php/upload.html" />
-        <option value="$PROJECT_DIR$/php/forUpdateOrUpload.php" />
-        <option value="$PROJECT_DIR$/php/detail.php" />
-        <option value="$PROJECT_DIR$/php/upload.php" />
         <option value="$PROJECT_DIR$/php/project2.php" />
         <option value="$PROJECT_DIR$/php/forSearch.php" />
+        <option value="$PROJECT_DIR$/php/forSellAndAdd.php" />
+        <option value="$PROJECT_DIR$/css/information.css" />
+        <option value="$PROJECT_DIR$/js/upload.js" />
+        <option value="$PROJECT_DIR$/php/upload.php" />
+        <option value="$PROJECT_DIR$/php/forUpdateOrUpload.php" />
+        <option value="$PROJECT_DIR$/php/information.php" />
+        <option value="$PROJECT_DIR$/php/forDeleteArt.php" />
+        <option value="$PROJECT_DIR$/js/information.js" />
+        <option value="$PROJECT_DIR$/js/detail.js" />
+        <option value="$PROJECT_DIR$/php/detail.php" />
+        <option value="$PROJECT_DIR$/js/project2.js" />
+        <option value="$PROJECT_DIR$/php/forAccount.php" />
         <option value="$PROJECT_DIR$/js/cart.js" />
         <option value="$PROJECT_DIR$/css/project2.css" />
-        <option value="$PROJECT_DIR$/php/forSellAndAdd.php" />
-        <option value="$PROJECT_DIR$/js/detail.js" />
-        <option value="$PROJECT_DIR$/css/information.css" />
-        <option value="$PROJECT_DIR$/php/forAccount.php" />
-        <option value="$PROJECT_DIR$/php/information.php" />
+        <option value="D:/Project2/test.html" />
+        <option value="$PROJECT_DIR$/css/research.css" />
+        <option value="$PROJECT_DIR$/php/cart.php" />
+        <option value="$PROJECT_DIR$/test1.html" />
+        <option value="$PROJECT_DIR$/php/research.php" />
+        <option value="$PROJECT_DIR$/js/research.js" />
       </list>
     </option>
   </component>
@@ -259,6 +267,10 @@
               <item name="Project2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project2" type="462c0819:PsiDirectoryNode" />
               <item name="temp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -312,12 +324,12 @@
       <workItem from="1528770328541" duration="160000" />
       <workItem from="1528770603382" duration="79851000" />
       <workItem from="1528959845633" duration="90267000" />
-      <workItem from="1529205572653" duration="18187000" />
+      <workItem from="1529205572653" duration="37477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261824000" />
+    <option name="totallyTimeSpent" value="281114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
@@ -379,9 +391,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project2.php" />
-    <entry file="file://$PROJECT_DIR$/detail.php" />
-    <entry file="file://$PROJECT_DIR$/cart.php" />
     <entry file="file://$PROJECT_DIR$/temp/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
@@ -468,24 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/research.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="50" selection-start-line="50" selection-end-line="57" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -506,13 +501,6 @@
     <entry file="file://$PROJECT_DIR$/php/forTellChange.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/research.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="159" column="18" lean-forward="true" selection-start-line="159" selection-start-column="18" selection-end-line="159" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/forAddBalance.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -527,16 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/research.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -544,31 +522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/forJudge.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/upload.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="343" column="19" lean-forward="true" selection-start-line="343" selection-start-column="19" selection-end-line="343" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -586,45 +543,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/forUpdateOrUpload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/project2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="133" column="14" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/project2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="142" column="14" lean-forward="true" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/project2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/forSearch.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="48" column="2" lean-forward="true" selection-end-line="48" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
@@ -635,52 +557,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/detail.php">
+    <entry file="file://$PROJECT_DIR$/js/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/information.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="-456">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/information.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="246" column="16" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="16" />
+        <state relative-caret-position="284">
+          <caret line="212" column="14" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/cart.php">
+    <entry file="file://$PROJECT_DIR$/php/forJudge.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2546">
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        <state relative-caret-position="190">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="122" column="77" lean-forward="true" selection-start-line="122" selection-start-column="77" selection-end-line="122" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/forUpdateOrUpload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="62" column="86" selection-start-line="62" selection-start-column="86" selection-end-line="62" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/project2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="399">
+          <caret line="33" column="102" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/forAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="70" column="84" selection-start-line="70" selection-start-column="84" selection-end-line="70" selection-end-column="84" />
+        <state relative-caret-position="645">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/forDeleteArt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/information.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="232" column="41" lean-forward="true" selection-start-line="231" selection-end-line="232" selection-end-column="41" />
+        <state relative-caret-position="-71">
+          <caret line="133" column="145" selection-start-line="133" selection-start-column="145" selection-end-line="133" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="257" column="41" selection-start-line="257" selection-start-column="41" selection-end-line="257" selection-end-column="41" />
+          <folding>
+            <element signature="e#4300#4306#0#HTML" expanded="true" />
+            <element signature="e#4306#4312#0#HTML" expanded="true" />
+            <element signature="e#4312#4318#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/project2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Project2/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="130" column="79" lean-forward="true" selection-start-line="130" selection-start-column="79" selection-end-line="130" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/research.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="253" column="16" selection-start-line="253" selection-start-column="16" selection-end-line="253" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/research.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/research.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="147" column="84" selection-start-line="147" selection-start-column="84" selection-end-line="147" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/project2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
         </state>
       </provider>
     </entry>

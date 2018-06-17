@@ -31,13 +31,13 @@ $(document).ready(function () {
 });
 
 function account() {
-    alert((document.getElementById("head").name),(document.getElementsByClassName("money")[0].id));
+    // alert((document.getElementById("head").name),(document.getElementsByClassName("money")[0].id));
     $.ajax({
         url:"forAccount.php",
         data:{"userID":document.getElementById("head").name,"account":document.getElementsByClassName("money")[0].id},
         type:"get",
         success(msg){
-            alert(msg);
+            // alert(msg);
             if(msg == "enough"){
                 show("客官，这个宝贝已经乖乖地躺着等你了<br>(◕ᴗ◕✿)");
                 window.location.href="cart.php";
