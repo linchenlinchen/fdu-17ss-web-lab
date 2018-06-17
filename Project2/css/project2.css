@@ -1,0 +1,146 @@
+/*reset*/
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img
+{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+}
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	min-width: 100%;
+	background-color:white;
+}
+
+/*#dialog{*/
+	/*display: none;*/
+	/*font-family: ALTRASHED-rough;*/
+	/*font-size: x-large;*/
+	/*font-weight: bolder;*/
+	/*color: hotpink;*/
+	/*background-color: #ffe2cf;*/
+/*}*/
+.alert{
+	display: none;
+	position: absolute;
+	left: 60%;
+	top: 11%;
+	z-index: 5;
+}
+
+.foot{
+	padding: 0;
+}
+
+.header{
+    position: relative;
+	width:100%;
+	vertical-align: top;
+    overflow: hidden;
+}
+#nav{
+	height: 4em;
+	background:rgba(30,30,30,0.5);
+}
+
+.header h1{
+	font-family: Shunpu;
+	font-size: 2em;
+	 padding-left: 2em;
+	 color: rgba(250, 243, 45, 0.72);
+ }
+
+ .header span{
+	 font-family:monospace;
+	 font-weight: 100;
+	 font-size: 20px;
+     color: lightgray;
+ }
+ .header ul{
+	 float: right;
+ }
+.header li{
+    	list-style-type: none;
+		float:right;
+		font-weight: 300;
+		font-size: 15px;
+}
+
+.hot{
+	width: 1270px;
+	height: 350px;
+}
+#move{
+	height: 350px;
+}
+#move p{
+	font-size: small;
+	font-weight: bolder;
+}
+
+a{
+	padding:0 2em 0.5em 2em;
+	cursor: pointer;
+    color: white;
+}
+a:link{
+	color: lightgray;
+	text-decoration: none;
+}
+a:visited{
+	color: antiquewhite;
+}
+a:hover{
+	color: deeppink;
+}
+
+.recommend div{
+	padding:1em 5.55em 3em 5.5em ;
+	float: left;
+	text-align: center;
+	background-color:#e6d59d;
+}
+.recommend div a{
+	background-color:rgba(168,24,0,0.5);
+}
+.recommend div img{
+	width: 8em;
+	height: 10em;
+	border:solid cornflowerblue 0.3em;
+	border-radius: 50%;
+	background-color:rgba(168,24,0,0.5);
+}
+.recommend div img:hover{
+	border-color: lightblue;
+
+}
+.recommend .contents{
+	padding: 0;
+	position: unset;
+	height: 300px;
+}
+.recommend div .imag{
+	background-color: white;
+	padding: 0;
+}
+.recommend p{
+	font-family: Shunpu;
+}
+.description{
+	width: 240px;
+}
+.author{
+	font-style: italic;
+}
+
+.viewDetail{
+	background-color: aqua;
+}
+.imag{
+    position: relative;
+}
+

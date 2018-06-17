@@ -1,0 +1,221 @@
+/* This is CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    /* width: 100%;
+    min-width: 600px; */
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+    min-width: 100%;
+    background: url("sucai/180412.jpg");
+}
+
+header{
+    background-color:rgba(50,50,50,0.3);
+    height: 4em;
+}
+header div{
+    float: right;
+    padding: 0.1em 3em 0.1em 0;
+}
+header div span{
+    float: left;
+    padding: 0.3em;
+    margin-top: 1em;
+}
+header img{
+    height: 15px;
+    width: 15px;
+}
+header a{
+    color: lightgray;
+}
+header a:hover{
+    color: white;
+}
+
+nav{
+    height: 8em;
+}
+nav #top{
+    height: 6em;
+}
+nav img{
+    height: 1em;
+    width: 1em;
+    float: right;
+    padding: 0.2em ;
+    border: solid grey 0.1em;
+}
+nav input{
+    float: right;
+    height: 1.7em;
+}
+nav div span{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    margin-top: 3em;
+}
+nav h1{
+    float: left;
+    font-family: Shunpu;
+    font-size: 4em;
+    font-weight: bolder;
+    padding: 0.3em;
+}
+nav #bottom{
+    height: 2em;
+    background-color: grey;
+    padding-top: 0.6em;
+}
+
+
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+a{
+    padding: 0.3em 2em 0.3em 2em;
+    text-decoration: none;
+    color: darkslategray;
+}
+
+#researchPage{
+    color: aqua;
+}
+a:hover{
+    color: white;
+}
+a:active{
+    color: aqua;
+}
+main{
+    padding-top: 1em;
+    float: left;
+}
+main #secOne{
+    color: lightgray;
+    font-weight: lighter;
+    font-size: smaller;
+    padding-bottom: 2em;
+}
+main #secOne span{
+    color: black;
+}
+main #secTwo #one{
+    font-size: x-large;
+    padding-left: 1em;
+}
+main #secTwo #two{
+    float: right;
+    padding-right: 2em;
+}
+main #secTwo #two span{
+    float: left
+}
+main #secThree{
+    float: left;
+}
+main #secThree>div{
+    float: left;
+    background-color: #ffffde;
+    padding: 1.5em;
+    margin: 1.5em;
+    height: 20em;
+    width: 20em;
+}
+main #secThree div div{
+    float: left;
+    display: inline;
+}
+main #secThree div div span img{
+    float: left;
+    height: 5em;
+    width: 5em;
+    border: solid brown 0.2em;
+}
+main #secThree div div h3{
+    padding: 0.1em;
+}
+main #secThree div div span{
+    float: left;
+    font-family: Shunpu;
+    font-size: 1.7em;
+    font-weight: lighter;
+}
+main #secThree div div p{
+    font-family: 我字酷不守大蜀木英文字体;
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 0.3em;
+}
+main .divTwo {
+    font-weight: lighter;
+    font-size: 1em;
+    padding: 0.3em;
+    padding-top: 1em;
+}
+main #secThree div div a {
+    padding: 0.2em;
+    background-color: #9edcee;
+    font-weight: lighter;
+}
+main #secThree div div .checkP,.hotP{
+    float: left;
+    margin-top: 2em;
+    margin-left: 5em;
+
+}
+main #secThree div div a{
+    border: solid lightgray 0.1em;
+}
+main #secThree div div a:hover{
+    color: white;
+}
+main #secThree page button{
+    position: relative;
+    left: 44%;
+    display: inline;
+}
