@@ -2,9 +2,11 @@
 <html>
 <?php
 session_start();
+
 $userName = $_SESSION['userName'];
 $logout = $_SESSION['logout'];
 $numOfFootprint =++$_SESSION['numOfFootprint'];
+
 for($i=1;$i<$numOfFootprint;$i++){
     if($_SESSION["$i"."A"] == "<a class='foot' href='cart.php'>购物车 》</a>"){
         $_SESSION['numOfFootprint'] = $i;
@@ -17,7 +19,7 @@ $_SESSION["$numOfFootprint"."A"] = "<a class='foot' href='cart.php'>购物车 �
 try{
     $db = new PDO('mysql:host=localhost;dbname=artworks','root','');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+    $db -> exec('SET NAMES utf8');
 }
 
 catch(PDOException $e){
@@ -27,6 +29,11 @@ catch(PDOException $e){
 $user = $db->query("SELECT userID FROM users WHERE name='".$userName."'");
 while ($row=$user->fetch()){
     $userID = $row['userID'];
+}
+if(!isset($userID)){
+    print "<a href='login.php'>请登录！</a>";
+    exit();
+
 }
 
 ?>

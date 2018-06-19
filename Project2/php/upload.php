@@ -27,6 +27,11 @@ $user = $db->query("SELECT userID FROM users WHERE name='$userName'");
 while ($row = $user->fetch()){
     $userID = $row['userID'];
 }
+if(!isset($userID)){
+    print "<a href='login.php'>请登录！</a>";
+    exit();
+
+}
 
 ?>
 <head>

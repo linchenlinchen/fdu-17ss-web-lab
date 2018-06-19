@@ -31,6 +31,11 @@ while($row = $result->fetch()){
     $balance = $row['balance'];
     $userID = $row['userID'];
 }
+if(!isset($userID)){
+    print "<a href='login.php'>请登录！</a>";
+    exit();
+
+}
 ?>
 <head>
     <meta charset="utf-8">

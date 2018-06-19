@@ -1,6 +1,11 @@
 
 <?php
 session_start();
+$current = $_SESSION['currentPage']=0;
+if (isset($_GET['currentPage'])){
+    $_SESSION['currentPage'] = $_GET['currentPage'];
+    $current = $_SESSION['currentPage'];
+}
 $userName = $_SESSION['userName'];
 $logout = $_SESSION['logout'];
 $numOfFootprint =++$_SESSION['numOfFootprint'];
@@ -14,13 +19,75 @@ $_SESSION["$numOfFootprint"."A"] = "<a class='foot' href='research.php'>搜索 �
 try{
     $db = new PDO('mysql:local=localhost;dbname=artworks','root','');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $db -> exec('SET NAMES utf8');
 }
 catch(PDOException $e){
     print ("cannot connect!". $e->getMessage());
     exit();
 }
+
 ?>
 
+<?php
+if($_SERVER['REQUEST_METHOD'] = 'GET' && isset($_GET['research'])){
+$researchInform = '';
+$totalCount = 0;
+if(isset($_GET['research'])){
+    $researchInform = $_GET['research'];
+    $artist = $_GET['authors'];
+    $work = $_GET['works'];
+}
+if(trim($researchInform) == "" && $artist!='作者' && $work!="艺术品名"){
+    $sqlWords1 = "SELECT * FROM artworks WHERE sell=0 AND 
+        (((artist='$artist') AND title LIKE '%$work%'))";
+}
+elseif (trim($researchInform) == "" && $artist!='作者' && $work=="艺术品名"){
+    $sqlWords1 = "SELECT * FROM artworks WHERE sell=0 AND artist='$artist'";
+}
+else{
+    $sqlWords1 ="SELECT * FROM artworks WHERE sell=0 AND 
+        ((description LIKE '%$researchInform%' OR title LIKE '%$researchInform%' OR artist LIKE '%$researchInform%') 
+        OR ((artist='$artist') AND title LIKE '%$work%')) ";
+}
+$mark = ($_GET['page'] - 1) * 6;
+$number = $db->query($sqlWords1);
+$number1 = count($number->fetchAll());
+echo "$number1???";
+if($number1-$mark>=6) {
+    $sqlWords2 = $sqlWords1 . "LIMIT $mark,6";
+}
+else{
+    $left = $number1%6;
+    $sqlWords2 = $sqlWords1 . "LIMIT $mark,$left";
+}
+$good = $db->query($sqlWords2);
+//若未填写搜索信息
+    while (($row1=$good->fetch())){
+            $href = "../resources/img/" . $row1['imageFileName'];
+            $titleLen = strlen($row1['title']) > 25 ? 25 : $row1['title'];
+            $view = $row1['view'];
+            $prices = $row1['price'];
+            $goodBlock = "<div class='block'  name='$view' title='$prices' >
+                                        <div class=\"divOne\">
+                                            <span><img src=\"$href\"></span>
+                                            <span>
+                                                    <h3>" . ($titleLen == 25 ? (substr($row1['title'], 0, 25) . "...") : $row1['title']) . "</h3><br/>
+                                                    <p class='artist' name='$prices'>" . $row1['artist'] . "<br/>￥" . $row1['price'] . "</p>
+                                            </span>
+                                        </div>
+                                        <div class=\"divTwo\">
+                                            <p>" . substr($row1['description'], 0, strlen($row1['description']) > 300 ? 300 : strlen($row1['description'])) . "..." . "</p>
+                                        </div>
+                                        <div class='divAdd'>
+                                          <p class='checkP'><a href='detail.php?href=$href' class='check'>查看</a></p>
+                                         <p class='hotP'><a href='#' class='hot'>热度" . $row1['view'] . "</a></p>
+                                        </div>
+                                    </div>";
+                print $goodBlock;
+        }
+        exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,10 +100,12 @@ catch(PDOException $e){
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 <body>
+<!--提示框-->
 <div id="dialog" title="小可爱贴士(●'◡'●)">
     <h4 id="information"></h4>
 </div>
-<!--//黑灰色头部，含有用户，购物车，返回等等-->
+
+<!--黑灰色头部，含有用户，购物车，返回等等-->
 <header class="fixed-top">
     <div class="right">
             <span>
@@ -67,18 +136,19 @@ catch(PDOException $e){
     </div>
 </header>
 
-<!--//logo与搜索 其余导航-->
+<!--logo与搜索 其余导航-->
 <nav>
     <div id="top">
-<!--        //logo-->
+<!--logo-->
         <h1>21Art Store</h1>
         <span>
-            <form method="get" action="research.php"><input type="text" placeholder="搜索" name="research"
+            <form method="post" action="research.php"><input type="text" placeholder="搜索" name="research" id="research"
               <?php if(isset($_GET['research'])){print "value='".$_GET['research']."'";}?>
-                ><button type="submit" >搜索</button><br/><br/>
-<!--                //选择作者的下拉列表-->
-                    <select type="submit" name="authors">
-<!--                        //辅助的提示选项-->
+                ><button type="submit" onclick="return changePageTo(1)">搜索</button><br/><br/>
+
+<!--选择作者的下拉列表-->
+                    <select type="submit" name="authors" id="authors" onchange="changeWorks()">
+<!--辅助的提示选项-->
                         <option selected value="作者">作者</option>
                         //php连接数据库打印作者选项
                         <?php
@@ -97,26 +167,12 @@ catch(PDOException $e){
                         }
                         ?>
                     </select>
-<!--                //选择作品的下拉列表-->
-                    <select name="works">
-<!--                        //辅助的提示选项-->
+
+<!--选择作品的下拉列表-->
+                    <select name="works" id="works">
+<!--辅助的提示选项-->
                         <option selected value="艺术品名">艺术品名</option>
-<!--                        //php连接数据库打印作品名-->
-                        <?php
-                        $works = $db->query('SELECT title,artist From artworks WHERE sell=0');
-                        $work = '';
-                        while ($row = $works->fetch()){
-                            if($work != $row['title']){
-                                if(isset($_GET["works"]) && $row['title'] === $_GET["works"] ){
-                                    print "<option selected value='".$row['title']."'>". (strlen($row['title']) > 30 ? (substr($row['title'], 0, 30) . '...') : $row['title']) . "</option>";
-                                }
-                                else{
-                                    print "<option value='".$row['title']."'>". (strlen($row['title']) > 30 ? (substr($row['title'], 0, 30) . '...') : $row['title']) . "</option>";
-                                }
-                            }
-                                $work = $row['title'];
-                        }
-                        ?>
+<!--php连接数据库打印作品名-->
                     </select>
             </form>
         </span>
@@ -144,99 +200,48 @@ catch(PDOException $e){
     </section>
     <section id="secTwo">
         <p id="one">搜索结果：</p>
-        <form method="get" ><p id="two"><span>排序方式：</span><span>价格</span><span><input type="radio" id="prices" name="sort" value="1"></span>
-            <span>热度</span><span><input type="radio" id="views" name="sort" value="2" checked></span></p></form>
+        <form method="get" ><p id="two"><span>排序方式：</span><span>价格</span><span><input type="radio" id="prices" name="sort" value="1" onclick="price()"></span>
+            <span>热度</span><span><input type="radio" id="views" name="sort" value="2" onclick="view()" checked></span></p></form>
     </section>
     <section id="secThree">
 
-<!--//php搜索符合的商品并打印出来-->
-        <?php
-        $researchInform = '';
-        $totalCount = 0;
-        if(isset($_GET['research'])){
-            $researchInform = $_GET['research'];
-        }
-        $good = $db->query('SELECT * FROM artworks WHERE sell=0');
-        //若未填写搜索信息
-        if($researchInform == ''){
-            while ($row1=$good->fetch()){
-                $href = "../resources/img/".$row1['imageFileName'];
-                $titleLen = strlen($row1['title'])>25 ? 25: $row1['title'];
-                $view = $row1['view'];
-                $prices = $row1['price'];
-                $goodBlock = "<div class='block'  name='$view'>
-                                <div class=\"divOne\">
-                                    <span><img src=\"$href\"></span>
-                                    <span>
-                                            <h3>" . ($titleLen == 25 ? (substr($row1['title'], 0, 25) . "...") : $row1['title']) . "</h3><br/>
-                                            <p class='artist' name='$prices'>" . $row1['artist'] . "<br/>￥" . $row1['price'] . "</p>
-                                    </span>
-                                </div>
-                                <div class=\"divTwo\">
-                                    <p>" . substr($row1['description'], 0, strlen($row1['description']) > 300 ? 300 : strlen($row1['description'])) . "..." . "</p>
-                                </div>
-                                <div class='divAdd'>
-                                  <p class='checkP'><a href='detail.php?href=$href' class='check'>查看</a></p>
-                                 <p class='hotP'><a href='#' class='hot'>热度".$row1['view']."</a></p>
-                                </div>
-                            </div>";
-//                未填写筛选信息但是勾选了高级筛选
-                if(isset($_GET['authors'])&&($row1['artist'] == $_GET['authors'] || $_GET['authors'] == "作者") && ($row1['title'] == $_GET['works'] || $_GET['works'] == "艺术品名")){
-                    $totalCount++;//符合搜索条件的艺术品数量又多了1
-                    print $goodBlock;
-                    if($totalCount == 6){
-                        break;
-                    }
-                }
-                //初始页面展示所有
-                elseif(!isset($_GET['authors'])){
-                    $totalCount++;//符合搜索条件的艺术品数量又多了1
-                    print $goodBlock;
-                }
-            }
-        }
-        //若填写了搜索信息
-        else{
-            while ($row1=$good->fetch()){
-                $href = "../resources/img/".$row1['imageFileName'];
-                $titleLen = strlen($row1['title'])>25 ? 25: $row1['title'];
-                $view = $row1['view'];
-                $prices = $row1['price'];
-                $goodBlock = "<div class='block'  name='$view'>
-                                <div class=\"divOne\">
-                                    <span><img src=\"$href\"></span>
-                                    <span>
-                                            <h3>" . ($titleLen == 25 ? (substr($row1['title'], 0, 25) . "...") : $row1['title']) . "</h3><br/>
-                                            <p class='artist' name='$prices'>" . $row1['artist'] . "<br/>￥" . $row1['price'] . "</p>
-                                    </span>
-                                </div>
-                                <div class=\"divTwo\">
-                                    <p>" . substr($row1['description'], 0, strlen($row1['description']) > 300 ? 300 : strlen($row1['description'])) . "..." . "</p>
-                                </div>
-                                <div class='divAdd'>
-                                  <p class='checkP'><a href='detail.php?href=$href' class='check'>查看</a></p>
-                                 <p class='hotP'><a href='#' class='hot'>热度".$row1['view']."</a></p>
-                                </div>
-                            </div>";
-                if($row1['artist']==$researchInform || $row1['title']==$researchInform || strpos($row1['description'],$researchInform)> 0 ){
-                    $totalCount++;//符合搜索条件的艺术品数量又多了1
-                    $titleLen = strlen($row1['title'])>25 ? 25: $row1['title'];
-                    print $goodBlock;
-                }
-            }
-        }
-        //若最终未找到符合商品的，打印一段字
-        if($totalCount == 0){
-            print '<p>不好意思，我们未找到符合条件的商品</p>';
-        }
-        ?>
-    </section>
 
+
+    </section>
 </main>
+<footer>
+    <div class="page">
+        <a id="head" onclick="turnHead()"><<</a>
+        <a id="last" onclick="lastPage()"><</a>
+        <a id="current">1</a>
+        <a id="next" onclick="nextPage()">></a>
+        <a id="tail" onclick="turnTail()">>></a>
+    </div>
+</footer>
 </body>
 <script src="../js/project2.js"></script>
-<script src="../js/login.js"></script>
-<script src="../js/register.js"></script>
 <script src="../js/research.js"></script>
 
 </html>
+
+
+
+
+
+
+<!--$works = $db->query('SELECT title,artist From artworks WHERE sell=0');-->
+<!--$work = '';-->
+<!--while ($row = $works->fetch()){-->
+<!--    if($work != $row['title']){-->
+<!--        if(isset($_GET["works"]) && $row['title'] === $_GET["works"] ){-->
+<!--            print "<option selected value='".$row['title']."'>". (strlen($row['title']) > 30 ? (substr($row['title'], 0, 30) . '...') : $row['title']) . "</option>";-->
+<!--        }-->
+<!--        else{-->
+<!--            print "<option value='".$row['title']."'>". (strlen($row['title']) > 30 ? (substr($row['title'], 0, 30) . '...') : $row['title']) . "</option>";-->
+<!--        }-->
+<!--    }-->
+<!--    $work = $row['title'];-->
+<!--}-->
+
+
+

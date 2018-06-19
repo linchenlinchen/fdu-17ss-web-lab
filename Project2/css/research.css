@@ -118,7 +118,7 @@ nav button:hover{
 nav div span{
     position: absolute;
     top: 5%;
-    left: 60%;
+    left: 45%;
     margin-top: 3em;
 }
 
@@ -185,6 +185,7 @@ main #secThree{
     float: left;
 }
 main #secThree>div{
+    display: block;
     float: left;
     background-color: #ffffde;
     padding: 1.5em;
@@ -257,6 +258,10 @@ main #secThree page button{
     position: relative;
     left: 44%;
     display: inline;
+}
+
+.page{
+    text-align: center;
 }
 
 /*#form{*/
