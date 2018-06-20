@@ -32,23 +32,7 @@ function view(){
     }
 }
 
-document.onload=function () {
 
-}
-
-function showSix(page) {
-
-    let number = document.getElementsByClassName("block").length;
-    for(let i= 0;i<6 * (page - 1);i++){
-        $(".block")[i].css("display","hidden");
-    }
-    for (let j = 6 * page;j< number;j++){
-        $(".block")[j].css("display","hidden");
-    }
-    for (let m=6 * (page - 1);m < 6 * page;m++){
-        $(".block")[j].css("display","block");
-    }
-}
 
 function changeWorks() {
     let artist = document.getElementsByName("authors")[0].value;
@@ -75,11 +59,6 @@ function changeWorks() {
                 }
                 node.appendChild(textNode);
                 document.getElementsByName("works")[0].appendChild(node);
-                //加块
-                // var block = document.createElement("div");
-                // var secOne = document.createElement("div");
-                //
-                // document.getElementById("secThree");
             }
 
 
@@ -89,6 +68,7 @@ function changeWorks() {
 
 document.ready=function(){
     changePageTo(1);
+
 };
 
 function changePageTo(page) {
@@ -100,33 +80,49 @@ function changePageTo(page) {
         success(msg){
             let html = msg.split("???");
             localStorage.setItem('number',html[0]);
-            alert(html[0]);
+            // alert(html[0]);
             $("#secThree").html(html[1]);
         }
     });
+    if(localStorage.getItem('number')){
+        if(parseInt(localStorage.getItem('number')%6)==0){
+            document.getElementById("totalPage").innerText=(parseInt(localStorage.getItem('number')/6)).toString();
+        }
+        else {
+            document.getElementById("totalPage").innerText=(parseInt(localStorage.getItem('number')/6) + 1).toString();
+        }
+    }
+    document.getElementById("current").innerText=page.toString();
     return false;
 }
 
 function nextPage() {
-    if((document.getElementById("current").innerText) + 1<parseInt(localStorage.getItem('number') / 6 + 1)) {
-        changePageTo(parseInt(document.getElementById("current").innerText) + 1);
-        let page = parseInt(document.getElementById("current").innerText) + 1;
-        document.getElementById("current").innerText = page.toString();
+    if(parseInt(localStorage.getItem('number')%6)==0) {
+        if((document.getElementById("current").innerText) <parseInt(localStorage.getItem('number') / 6 )) {
+            changePageTo(parseInt(document.getElementById("current").innerText) + 1);
+        }
+        else {
+            show("客官，没有下一页了呢<br/>Σ(っ°Д°;)っ")
+        }
     }
     else {
-        show("客官，没有下一页了呢<br/>Σ(っ°Д°;)っ")
+        if((document.getElementById("current").innerText) <parseInt(localStorage.getItem('number') / 6 + 1)) {
+            changePageTo(parseInt(document.getElementById("current").innerText) + 1);
+        }
+        else {
+            show("客官，没有下一页了呢<br/>Σ(っ°Д°;)っ")
+        }
     }
+
+
 }
 function lastPage() {
     if(parseInt(document.getElementById("current").innerText)>1){
         changePageTo(parseInt(document.getElementById("current").innerText) - 1);
-        let page = parseInt(document.getElementById("current").innerText) - 1;
-        document.getElementById("current").innerText = page.toString();
     }
 }
 function turnHead() {
     changePageTo(1);
-    document.getElementById("current").innerText = '1';
 }
 function turnTail() {
     let tail = 0;
@@ -137,33 +133,15 @@ function turnTail() {
         tail = parseInt(localStorage.getItem('number') / 6)+1;
     }
     changePageTo(tail);
-    document.getElementById("current").innerText = tail.toString();
 }
-// function hold() {
-//     let work = document.getElementById("works").value;
-//     $.ajax({
-//         url:"research.php",
-//         data:{"work":work},
-//         type:"get",
-//         success(msg){
-//
-//         }
-//     })
-// }
 
-// <!--//        $goodBlock = "<div class='block'  name='$view' title='$prices' >-->
-// <!--//                                <div class=\"divOne\">-->
-// <!--//                                    <span><img src=\"$href\"></span>-->
-// <!--//                                    <span>-->
-// <!--//                                            <h3>" . ($titleLen == 25 ? (substr($row1['title'], 0, 25) . "...") : $row1['title']) . "</h3><br/>-->
-// <!--//                                            <p class='artist' name='$prices'>" . $row1['artist'] . "<br/>￥" . $row1['price'] . "</p>-->
-// <!--//                                    </span>-->
-// <!--//                                </div>-->
-// <!--//                                <div class=\"divTwo\">-->
-// <!--//                                    <p>" . substr($row1['description'], 0, strlen($row1['description']) > 300 ? 300 : strlen($row1['description'])) . "..." . "</p>-->
-// <!--//                                </div>-->
-// <!--//                                <div class='divAdd'>-->
-// <!--//                                  <p class='checkP'><a href='detail.php?href=$href' class='check'>查看</a></p>-->
-// <!--//                                 <p class='hotP'><a href='#' class='hot'>热度".$row1['view']."</a></p>-->
-// <!--//                                </div>-->
-// <!--//                            </div>";-->
+function directToPage() {
+    let toPage = document.getElementById("toPage").value;
+    let totalPage = parseInt(document.getElementById("totalPage").innerText);
+    if(toPage>0&&toPage<=totalPage) {
+        changePageTo(toPage)
+    }
+    else {
+        show("客官，你这页数有点彪啊<br/>(*/ω＼*)")
+    }
+}

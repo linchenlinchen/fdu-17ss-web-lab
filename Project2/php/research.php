@@ -216,6 +216,7 @@ $good = $db->query($sqlWords2);
         <a id="current">1</a>
         <a id="next" onclick="nextPage()">></a>
         <a id="tail" onclick="turnTail()">>></a>
+        <input type="number" id="toPage" onchange="directToPage()"><span>/</span><span id="totalPage" ></span>
     </div>
 </footer>
 </body>
@@ -224,24 +225,6 @@ $good = $db->query($sqlWords2);
 
 </html>
 
-
-
-
-
-
-<!--$works = $db->query('SELECT title,artist From artworks WHERE sell=0');-->
-<!--$work = '';-->
-<!--while ($row = $works->fetch()){-->
-<!--    if($work != $row['title']){-->
-<!--        if(isset($_GET["works"]) && $row['title'] === $_GET["works"] ){-->
-<!--            print "<option selected value='".$row['title']."'>". (strlen($row['title']) > 30 ? (substr($row['title'], 0, 30) . '...') : $row['title']) . "</option>";-->
-<!--        }-->
-<!--        else{-->
-<!--            print "<option value='".$row['title']."'>". (strlen($row['title']) > 30 ? (substr($row['title'], 0, 30) . '...') : $row['title']) . "</option>";-->
-<!--        }-->
-<!--    }-->
-<!--    $work = $row['title'];-->
-<!--}-->
 
 
 
