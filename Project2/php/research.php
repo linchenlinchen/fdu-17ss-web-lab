@@ -36,6 +36,17 @@ if(isset($_GET['research'])){
     $researchInform = $_GET['research'];
     $artist = $_GET['authors'];
     $work = $_GET['works'];
+    $array = explode(" ",$researchInform);
+    $sql = "";
+    for($y=0;$y<count($array);$y++){
+        $cut = $array[$y];
+        if($y<count($array)-1) {
+            $sql =$sql. " description LIKE '%" . "$cut" . "%' " . "OR artist LIKE '%"."$cut"."%' OR "."title LIKE '%"."$cut"."%' OR ";
+        }
+        else{
+            $sql =$sql. " description LIKE '%" . "$cut" . "%' " . "OR artist LIKE '%"."$cut"."%' OR "."title LIKE '%"."$cut"."%' ";
+        }
+    }
 }
 if(trim($researchInform) == "" && $artist!='作者' && $work!="艺术品名"){
     $sqlWords1 = "SELECT * FROM artworks WHERE sell=0 AND 
@@ -46,8 +57,7 @@ elseif (trim($researchInform) == "" && $artist!='作者' && $work=="艺术品名
 }
 else{
     $sqlWords1 ="SELECT * FROM artworks WHERE sell=0 AND 
-        ((description LIKE '%$researchInform%' OR title LIKE '%$researchInform%' OR artist LIKE '%$researchInform%') 
-        OR ((artist='$artist') AND title LIKE '%$work%')) ";
+        ($sql) ";
 }
 $mark = ($_GET['page'] - 1) * 6;
 $number = $db->query($sqlWords1);

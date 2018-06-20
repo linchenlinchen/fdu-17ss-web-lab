@@ -84,7 +84,7 @@ function changePageTo(page) {
             $("#secThree").html(html[1]);
         }
     });
-    if(localStorage.getItem('number')){
+    if(!isNaN(parseInt(localStorage.getItem('number')))){
         if(parseInt(localStorage.getItem('number')%6)==0){
             document.getElementById("totalPage").innerText=(parseInt(localStorage.getItem('number')/6)).toString();
         }
