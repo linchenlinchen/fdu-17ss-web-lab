@@ -24,10 +24,16 @@ $(document).ready(function () {
             }
         })
     });
-
-    // $.ajax({
-    //
-    // })
+    $.ajax({
+        url:"forAddButSold.php",
+        data:{"userID":document.getElementById("head").name},
+        type:"get",
+        success(msg){
+            if(msg=="information"){
+                show("客官，你的购物车有点变化，可能有商品被人买走或者商品信息变化咯<br/>(づ｡◕ᴗᴗ◕｡)づ");
+            }
+        }
+    })
 });
 
 function account() {

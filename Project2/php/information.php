@@ -86,7 +86,7 @@ if(!isset($userID)){
         <ul>
             <li><a href="project2.php">首页</a></li>
             <li><a href="research.php" id="researchPage">搜索</a></li>
-            <li><a href="#">发布艺术品</a></li>
+            <li><a href="upload.php">发布艺术品</a></li>
         </ul>
     </div>
 </nav>

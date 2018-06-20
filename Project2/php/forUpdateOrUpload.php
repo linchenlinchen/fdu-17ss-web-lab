@@ -62,8 +62,29 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
                       genre=?,width=?,height=?,price=?,timeReleased=? WHERE ownerID=$userID AND imageFileName = '$fileName'");
                 $stmt->execute(array($title, $artist, $description, $year, $genre, $width, $height, $price, $timeStr));
                 echo "<a href='upload.php'>客官，东西我都给你改好了呢(｀・ω・´)<span>点击返回</span></a>";
+                //找到要更新的商品的artworkID
+                $artworkID = $db->query("SELECT artworkID FROM artworks WHERE imageFileName = '$fileName'");
+                $id=0;
+                while ($row4 = $artworkID->fetch()){
+                    $id = $row4['artworkID'];
+                }
+                //对购物车里面有该商品的用户加入提示的information=1
+                $information = $db->query("SELECT * FROM users");
+                while ($row3 = $information->fetch()){
+                    $userIdentify = $row3['userID'];
+                    $forInformation = $db->query("SELECT * FROM carts WHERE userID=$userIdentify");
+                    while ($row5 = $forInformation->fetch()){
+                        for ($m=0;$m<10;$m++){
+                            $temper = "artworkID"."$m";
+                            if($row5["$temper"]==$id){
+                                $db->exec("UPDATE users SET information=1 WHERE userID=$userIdentify");
+                                break;
+                            }
+                        }
+                    }
+                }
 
-            } //若本无文件在该文件夹里面，则移入该文件夹，并且在artworks里面加入这一行
+            }
             else {
                 move_uploaded_file($_FILES["file"]["tmp_name"],
                     "../resources/img/" . $_FILES["file"]["name"]);
@@ -72,7 +93,10 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
                 echo "<a href='upload.php'>客官，东西我都给你上传好了呢(｀・ω・´)<span>点击返回</span></a>";
             }
         }
+        exit();
         }
+            echo "<a href='upload.php'>客官，东西呢(｀・ω・´)<span>点击返回</span></a>";
+
     }
 }
 ?>

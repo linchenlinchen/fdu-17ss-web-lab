@@ -39,14 +39,28 @@ if(isset($_GET['userID']) && isset($_GET['account'])) {
                 while ($row4 = $artwork1->fetch()){
                     $oldOwenerID = $oldOwenerID."??".$row4['ownerID'];
                 }
-
+                $other = $db->query("SELECT * FROM carts WHERE userID!=$userID");
+                while ($row5 = $other->fetch()){
+                    $anotherUserID=$row5['userID'];
+                    for ($m=0;$m<10;$m++){
+                        $temper = "artworkID"."$m";
+                        if($row5["$temper"]==$row3["$temp"]){
+                            $db->exec("UPDATE carts SET $temp=0 WHERE userID=$anotherUserID");
+                            $otherUser = $row5['userID'];
+                            $db->exec("UPDATE users SET information=1 WHERE userID=$otherUser");
+                        }
+                    }
+                }
             }
         }
     }
     $stmt->execute(array($userID, $account, $timeStr,$oldOwenerID));
+
+
     //给相应艺术品标记已售出，即sell设置为1
     $cart = $db->query("SELECT * FROM carts WHERE userID=$userID");
     while ($row = $cart->fetch()) {
+        $title="";
         for ($i = 0; $i < 10; $i++) {
             $t = "artworkID" . "$i";
             if ($row["$t"] != 0) {
@@ -57,23 +71,26 @@ if(isset($_GET['userID']) && isset($_GET['account'])) {
                 $art = $db->query("SELECT title FROM artworks WHERE artworkID=$artworkID");
                 //加入标题
                 while ($row1 = $art->fetch()) {
-                    $title = "??".$row1['title'];
-                    $oldTitle = $db->query("SELECT title FROM orders  WHERE ownerID=$userID");
-                    while ($row2 = $oldTitle->fetch()){
-                        $title = $row2['title']."$title";
-                    }
+                    $title =$title. "??".$row1['title'];
+//                    $oldTitle = $db->query("SELECT title FROM orders  WHERE ownerID=$userID ORDER BY timeCreated DESC");
+//                    while ($row2 = $oldTitle->fetch()){
+//                        $title = $row2['title']."$title";
+//                        break;
+//                    }
                 }
 
             }
         }
-        $stmt = $db->exec("UPDATE orders SET title='$title' WHERE ownerID=$userID");
+           $stmt = $db->exec("UPDATE orders SET title='$title' WHERE ownerID=$userID ORDER BY timeCreated DESC LIMIT 1");
+
+//        }
     }
     //删除该用户购物车一行
     $cart1 = $db->query("SELECT * FROM carts WHERE userID=$userID");
     while ($row = $cart1->fetch()) {
         for ($i = 0; $i < 10; $i++) {
             $t = "artworkID" . "$i";
-            $db->exec("UPDATE carts SET $t=0");
+            $db->exec("UPDATE carts SET $t=0 WHERE userID=$userID");
         }
     }
 }

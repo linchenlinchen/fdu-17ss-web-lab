@@ -36,6 +36,7 @@ if(!isset($userID)){
 
 }
 
+
 ?>
 <head>
     <meta charset="utf-8">
@@ -86,7 +87,7 @@ if(!isset($userID)){
         <ul>
             <li><a href="project2.php">首页</a></li>
             <li><a href="research.php">搜索</a></li>
-            <li><a href="#">发布艺术品</a></li>
+            <li><a href="upload.php">发布艺术品</a></li>
         </ul>
     </div>
 </nav>
@@ -117,12 +118,11 @@ if(!isset($userID)){
                         //将artworkID0 - artworkID9 在循环不同次数时分布赋值给$t
                         $t = 'artworkID'."$i";
                         //即当存在该值时
-                        if($row["$t"] != 0){
+                        if($row["$t"] != 0) {
                             $artworkID = $row["$t"];
                             //去数据库找到对应的商品
                             $result1 = $db->query("SELECT * FROM artworks WHERE artworkID=$artworkID AND sell=0");
-                            $soldout = $db->query("SELECT * FROM artworks WHERE artworkID=$artworkID AND sell=1");
-                            while ($row1=$result1->fetch()){
+                            while ($row1 = $result1->fetch()) {
                                 $src = $row1['imageFileName'];
                                 $title = $row1['title'];
                                 $artist = $row1['artist'];
@@ -130,7 +130,8 @@ if(!isset($userID)){
                                 $price = $row1['price'];
                                 $account = $account + (int)($price);
                             }
-                            echo "
+                            if (isset($src)) {
+                                echo "
                 <div class=\"good\" id=\"pic$i\">
                     <span><img src=\"../resources/img/$src\" name='$artworkID'></span>
                     <span id='inform'>
@@ -150,6 +151,7 @@ if(!isset($userID)){
                         </div>
                     </span>
                 </div>";
+                            }
                         }
                     }
 

@@ -1,11 +1,11 @@
 <?php
 session_start();
 $numOfFootprint = $_SESSION['numOfFootprint']=1;
-$_SESSION['project2.php'] ="首页";
-$_SESSION['research.php'] = "搜索";
-$_SESSION['cart.php'] = "购物车";
-$_SESSION['detail.php'] = "商品详情";
-$_SESSION['information.php'] = "个人信息";
+//$_SESSION['project2.php'] ="首页";
+//$_SESSION['research.php'] = "搜索";
+//$_SESSION['cart.php'] = "购物车";
+//$_SESSION['detail.php'] = "商品详情";
+//$_SESSION['information.php'] = "个人信息";
 $_SESSION["$numOfFootprint"."A"] = "<a class='foot' href='project2.php'>首页 》</a>";
 
 if(isset($_GET["login"])){
