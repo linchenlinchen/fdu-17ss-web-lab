@@ -33,13 +33,22 @@ document.onclick = function () {
 };
 function selectFile() {
     //获取选择的图片的文件名
+    alert(1);
     let src = $("#img").val();
-    let pos = src.lastIndexOf("\\");
-        src = src.substring(pos+1);
-    document.getElementById("image").src ="../resources/img/"+ src;
+    let fileFormat = src.substring(src.lastIndexOf(".")).toLowerCase();
+    let src1 = window.URL.createObjectURL($("#img")[0].files[0]);
+    if(!fileFormat.match(/.png|.jpg|.jpeg/)){
+        show("客官，文件不行");
+        return;
+    }
+    $("#image").attr("src",src1);
+    alert(src);
+    // let pos = src.lastIndexOf("\\");
+    //     let srcName = src.substring(pos+1);
+    // document.getElementById("image").src ="../../../"+src;
         $.ajax({
             url:"forJudge.php",
-            data:{"src":src},
+            data:{"src":src1},
             type:"get",
             success(msg){
                 if(msg.length > 1) {

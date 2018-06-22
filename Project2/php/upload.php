@@ -123,7 +123,7 @@ if(!isset($userID)){
                     <li>艺术品流派：<input type="text" name="genre" maxlength="30" placeholder="艺术品流派" id="genre" onchange="cEmpty('genre')"><span id="cGenre"></span></li>
                     <li>艺术品尺寸：<input type="number" id="width" name="width" placeholder="宽度" onchange="cEmpty('width');cPositive('width')"><input type="number"id="height" name="height" placeholder="高度" onchange="cEmpty('height');cPositive('height')"><span id="cSize"></span></li>
                     <li>艺术品价格：<input type="number"  name="price" placeholder="艺术品价格" id="price" onchange="cEmpty('price');cInt('price');cPositive('price')"><span id="cPrice"></span></li>
-                    <li>艺术品图片：<input type="file" name="file" id="img" onchange="selectFile()"><?php $_GET['fileName']?></li><img id="image"
+                    <li>艺术品图片：<input type="file" name="file" id="img" onchange="selectFile()"></li><img id="image"
                     <?php
                     if(isset($_GET['fileName'])){
                         $fileName=$_GET['fileName'];
