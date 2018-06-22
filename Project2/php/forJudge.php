@@ -9,7 +9,7 @@ catch(PDOException $e){
     print ("cannot connect!". $e->getMessage());
     exit();
 }
-$src1 = $_GET['src1'];
+$src1 = $_GET['src'];
 $artwork = $db->query("SELECT * FROM artworks WHERE imageFileName='$src1'");
 while ($row = $artwork->fetch()){
     $title = $row['title'];

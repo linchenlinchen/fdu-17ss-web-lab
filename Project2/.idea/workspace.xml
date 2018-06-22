@@ -52,20 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+            <state relative-caret-position="114">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -73,8 +64,8 @@
       <file leaf-file-name="forJudge.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/forJudge.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+            <state relative-caret-position="456">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -97,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/upload.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="313">
@@ -106,11 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forUpdateOrUpload.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="project2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/project2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1425">
+              <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forUpdateOrUpload.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/forUpdateOrUpload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="44" />
+            <state relative-caret-position="213">
+              <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -153,10 +153,10 @@
       <find>soldout</find>
       <find>sec</find>
       <find>changeW</find>
-      <find>for</find>
       <find>changePageTo(1)</find>
       <find>ale</find>
       <find>tota</find>
+      <find>for</find>
     </findStrings>
     <replaceStrings>
       <replace>POST</replace>
@@ -218,7 +218,6 @@
         <option value="$PROJECT_DIR$/js/cart.js" />
         <option value="$PROJECT_DIR$/temp/researchPageLogin.css" />
         <option value="$PROJECT_DIR$/php/project2.php" />
-        <option value="$PROJECT_DIR$/php/forUpdateOrUpload.php" />
         <option value="$PROJECT_DIR$/php/cart.php" />
         <option value="$PROJECT_DIR$/js/information.js" />
         <option value="$PROJECT_DIR$/php/information.php" />
@@ -229,6 +228,7 @@
         <option value="$PROJECT_DIR$/php/upload.php" />
         <option value="$PROJECT_DIR$/js/upload.js" />
         <option value="$PROJECT_DIR$/php/forJudge.php" />
+        <option value="$PROJECT_DIR$/php/forUpdateOrUpload.php" />
       </list>
     </option>
   </component>
@@ -340,12 +340,12 @@
       <workItem from="1529476252794" duration="6644000" />
       <workItem from="1529483334077" duration="4722000" />
       <workItem from="1529490905402" duration="1012000" />
-      <workItem from="1529494365235" duration="10859000" />
+      <workItem from="1529494365235" duration="12268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="341658000" />
+    <option name="totallyTimeSpent" value="343067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -624,13 +624,6 @@
     <entry file="file://$PROJECT_DIR$/js/jquery-3.3.1.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/project2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="85" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/research.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
@@ -673,27 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/forUpdateOrUpload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/forJudge.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/project2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -701,10 +673,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/project2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/forJudge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="133" column="25" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/forUpdateOrUpload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
         </state>
       </provider>
     </entry>
