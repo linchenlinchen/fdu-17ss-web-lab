@@ -2,16 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>LRC 歌词编辑器</title>
+    <title>歌词编辑器</title>
     <link rel="stylesheet" href="forLab11.css">
 </head>
 <body>
 <nav><ul>
         <li id="d_edit" class="tab">Edit Lyric</li>
         <li id="d_show" class="tab">Show Lyric</li>
-    </ul></nav>
-
-<!--歌词编辑部分-->
+    </ul>
+</nav>
 <section id="s_edit" class="content">
     <form id="f_upload" enctype="multipart/form-data" action = 'forSubmit.php' method = 'post'>
         <p>请上传音乐文件</p>
