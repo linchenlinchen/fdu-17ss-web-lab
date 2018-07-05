@@ -79,3 +79,13 @@ input[type="submit"] {
     margin:0;
     line-height:100%;
 }
+#s_show{
+    float: right;
+}
+#s_edit{
+    float: left;
+}
+
+input,textarea,button{
+    box-shadow:13px 3px 13px hotpink;
+}
