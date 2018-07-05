@@ -41,4 +41,4 @@
 </body>
 <script type = "text/javascript" src = "jquery-3.3.1.js"></script>
 <script src="forLab11.js"></script>
-</html><!DOCTYPE html>
+</html>
