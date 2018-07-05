@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>歌词编辑器</title>
     <link rel="stylesheet" href="forLab11.css">
 </head>
 <body>
